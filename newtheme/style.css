@@ -1,0 +1,14 @@
+/*
+Theme Name: Test Theme
+Author: Stefan Stekelenburg, Frank van der Velde
+ */
+
+body {
+  background: green;
+}
+
+header {
+  background: white;
+  width: 100%;
+  height: 100px;
+}
