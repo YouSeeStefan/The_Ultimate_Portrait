@@ -6,7 +6,7 @@
     <title></title>
   </head>
   <body <?php body_class();?>>
-    <header class="sticky-top">
+    <!-- <header class="sticky-top">
       <div class="container">
         <?php wp_nav_menu (
           array(
@@ -15,4 +15,4 @@
           )
         );?>
       </div>
-    </header>
+    </header> -->
