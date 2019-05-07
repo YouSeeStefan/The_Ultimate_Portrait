@@ -8,41 +8,25 @@ Template Name: homepage
 <div class="container-fluid">
   <div class="row">
     <div class="col-6">
-      <?php if (have_rows('slider')) : ?>
 
-        <ul class="slides">
+      <?php if( have_rows('slider') ): ?>
+      <div class=" container testimonials-container">
 
-          <?php while (have_rows('slider')) : the_row();
+        <?php while( have_rows('slider') ): the_row();
 
-            // vars
-            $image = get_sub_field('slider_image');
-            // $image = get_sub_field('image');
-            // $content = get_sub_field('content');
-            // $link = get_sub_field('link');
+          $image = get_sub_field('slider_image');
+          $imageurl = $image['sizes']['slider'];
+          $title = get_sub_field('title');
 
-            ?>
+          ?>
+        <div class="testimonial">
+          <img src="<?php echo $imageurl;?>" alt="<?php echo $title;?>">
+      </div>
+        <?php endwhile; ?>
 
-            <li class="slide">
-
-              <?php if ($link) : ?>
-                <a href="<?php echo $link; ?>">
-                <?php endif; ?>
-
-                <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt'] ?>" />
-
-                <?php if ($link) : ?>
-                </a>
-              <?php endif; ?>
-
-              <?php echo $content; ?>
-
-            </li>
-
-          <?php endwhile; ?>
-
-        </ul>
-
+      </div>
       <?php endif; ?>
+
 
     </div>
     <div class="col-4">

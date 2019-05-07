@@ -4,11 +4,11 @@ Author: Stefan Stekelenburg, Frank van der Velde
  */
 
 body {
-  background: green;
+  /* background: green; */
 }
 
 header {
-  background: white;
+  /* background: white; */
   width: 100%;
   height: 100px;
 }
@@ -23,12 +23,15 @@ header {
 
 .col-6 {
  border: 2px solid blue;
+ background-color: blue;
 }
 
 .col-4 {
   border: 2px solid blue;
+  background-color: white;
 }
 
 .col-2 {
   border: 2px solid blue;
+  background-color: red;
 }
