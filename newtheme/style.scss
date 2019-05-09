@@ -18,7 +18,7 @@ header {
 }
 
 .row {
- /* height: 100vh; */
+ height: 100vh;
 }
 
 .col-6 {
@@ -32,10 +32,6 @@ header {
   background-color: #C72D24;
 }
 
-.no-padding {
-  padding: 0;
-}
-
 .home_text {
   position: relative;
   top: 50%;
@@ -46,23 +42,10 @@ header {
   color: #C72D24;
 }
 
-.home_text a {
-  color:#C72D24;
-  border: 2px solid #C72D24;
-  border-radius: 6px;
-  padding: 6px 20px;
-  background-color: white;
+.home_text button {
+  color:#B42c24;
+  border: 2px solid #B42c24;
 }
-
-.navigation ul li a {
-color: white;
-text-decoration: none;
-}
-
-.navigation ul {
-  list-style-type: none;
-}
-
 
 /* footer */
 
