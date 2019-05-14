@@ -8,11 +8,11 @@ Template Name: homepage
 <div class="container-fluid">
   <div class="row">
     <div class="col-10 no-padding">
-      <div class="row">
+      <div class="row test">
       <div class="col-6">
 
         <?php if (have_rows('slider')) : ?>
-          <div class="container testimonials-container pt-4">
+          <div class="container testimonials-container paddingImg">
 
             <?php while (have_rows('slider')) : the_row();
 
@@ -31,7 +31,7 @@ Template Name: homepage
 
 
       </div>
-      <div class="col-6">
+      <div class="col-5 paddingText">
         <div class="home_text">
 
 
@@ -41,7 +41,7 @@ Template Name: homepage
               <?php the_content(); ?>
             <?php endwhile;
         endif; ?>
-          <a>
+          <a href="#">
             To the portraits
           </a>
         </div>
@@ -54,18 +54,19 @@ Template Name: homepage
         </div>
       </div>
     </div>
-    <div class="col-2">
-    
+    <div class="col-2" style="padding: 0;">
+
         <?php wp_nav_menu(
           array(
             'theme_location' => 'top-menu',
             'menu_class' => 'navigation'
           )
         ); ?>
-     
-    </div>
-        
-  </div>
-  
-</div>
 
+        <img class="sign" src="wp-content/themes/newtheme/img/handtekening.svg" alt="">
+
+    </div>
+
+  </div>
+
+</div>
