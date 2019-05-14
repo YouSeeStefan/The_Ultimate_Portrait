@@ -1,0 +1,59 @@
+/*
+Theme Name: Test Theme
+Author: Stefan Stekelenburg, Frank van der Velde
+ */
+
+body {
+  /* background: green; */
+}
+
+header {
+  /* background: white; */
+  width: 100%;
+  height: 100px;
+}
+
+.container-fluid {
+ /* border: 2px solid red; */
+}
+
+.row {
+ height: 100vh;
+}
+
+.col-6 {
+}
+
+.col-4 {
+  background-color: white;
+}
+
+.col-2 {
+  background-color: #C72D24;
+}
+
+.home_text {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.home_text h1 {
+  color: #C72D24;
+}
+
+.home_text button {
+  color:#B42c24;
+  border: 2px solid #B42c24;
+}
+
+/* footer */
+
+footer {
+  background-color: #000D29;
+  height: 300px;
+}
+
+footer h3 {
+  color: white;
+}

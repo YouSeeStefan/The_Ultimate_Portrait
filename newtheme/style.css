@@ -3,6 +3,47 @@ Theme Name: Test Theme
 Author: Stefan Stekelenburg, Frank van der Velde
  */
 
+ @font-face {
+  font-family: Didot;
+  src: url(css/Didot.ttf);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Didot !important;
+  font-size: 52px;
+}
+
+div .paddingText {
+  padding-left: 100px !important;
+}
+
+.lineHight {
+  line-height: 68px;
+  font-size: 54px;
+}
+
+.called {
+  color: #8C7B51;
+}
+
+.sign {
+  max-width: 158px;
+  position: fixed;
+  bottom: -60px;
+  right: 0%;
+  transform: translate(-50%, -50%);
+}
+
+.test {
+  height: 100vh !important;
+}
+
+.paddingImg {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
 body {
   /* background: green; */
 }
@@ -18,7 +59,7 @@ header {
 }
 
 .row {
- height: 100vh;
+ /* height: 100vh; */
 }
 
 .col-6 {
@@ -32,6 +73,10 @@ header {
   background-color: #C72D24;
 }
 
+.no-padding {
+  padding: 0;
+}
+
 .home_text {
   position: relative;
   top: 50%;
@@ -42,7 +87,42 @@ header {
   color: #C72D24;
 }
 
+.home_text a {
+  color:#C72D24;
+  border: 2px solid #C72D24;
+  border-radius: 6px;
+  padding: 6px 20px;
+  background-color: white;
+}
+
+.navigation li a {
+color: white;
+text-decoration: none;
+}
+
+.navigation li {
+  padding: 7px 0;
+}
+
+.navigation {
+  list-style-type: none;
+}
+
+.navigation {
+  position: fixed;
+  top: 30%;
+  font-size: 28px;
+}
+
 /* footer */
+
+label {
+  color: white !important;
+}
+
+div .wpforms-field .wpforms-field-hp {
+  display: none !important;
+}
 
 footer {
   background-color: #000D29;

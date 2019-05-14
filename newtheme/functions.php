@@ -53,3 +53,6 @@ register_nav_menus(
 add_image_size('smallest', 300, 300, true);
 add_image_size('largest', 800, 800, true);
 add_image_size('slider', 721, 828, true);
+
+// Add Custom Template File
+include_once( get_stylesheet_directory() . '/wpforms-custom-templates.php' );
