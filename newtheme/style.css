@@ -11,6 +11,17 @@ Author: Stefan Stekelenburg, Frank van der Velde
 h1, h2, h3, h4, h5, h6 {
   font-family: Didot !important;
   font-size: 52px;
+  color: #C72D24;
+}
+
+.contactPage {
+  margin: 50px;
+  margin-left: 100px !important;
+}
+
+.contactInfo {
+  margin-left: 20%;
+  margin-top: 10%;
 }
 
 div .paddingText {
@@ -38,10 +49,30 @@ div .paddingText {
   height: 100vh !important;
 }
 
+.rowC {
+  height: 50vh !important;
+}
+
+.rowF {
+  height: 50vh !important;
+}
+
 .paddingImg {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
+}
+
+span {
+  color: #C72D24;
+}
+
+.form {
+  margin-left: 50px;
+}
+
+.clearTD {
+  visibility: hidden;
 }
 
 body {
@@ -114,6 +145,18 @@ text-decoration: none;
   font-size: 28px;
 }
 
+.footerTables {
+  padding-top: 110px;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.footerTable {
+  padding-top: 50px;
+  width: 50%;
+  margin: 0 auto;
+}
+
 /* footer */
 
 label {
@@ -131,4 +174,8 @@ footer {
 
 footer h3 {
   color: white;
+}
+
+.footerC {
+  height: 50vh !important;
 }
