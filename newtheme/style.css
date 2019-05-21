@@ -14,7 +14,42 @@ h1, h2, h3, h4, h5, h6 {
   color: #C72D24;
 }
 
+.stopM {
+  margin: 50px;
+  margin-left: 100px !important;
+}
+
+.stopImg {
+  max-width: 721px;
+  max-height: 828px;
+  width: 90%;
+}
+
+.labels {
+  color: black !important;
+}
+
+.font {
+  font-size: 35px !important;
+}
+
+.contactImg {
+  max-width: 721px;
+  max-height: 828px;
+  width: 100%;
+}
+
 .contactPage {
+  margin: 50px;
+  margin-left: 100px !important;
+}
+
+.blogPage {
+  margin: 50px;
+  margin-left: 100px !important;
+}
+
+.singlePage {
   margin: 50px;
   margin-left: 100px !important;
 }
@@ -114,6 +149,26 @@ header {
   transform: translateY(-50%);
 }
 
+.single_text {
+  margin: 50px;
+  /* margin-left: 100px !important; */
+}
+
+tr.spaceUnder>td {
+  padding-bottom: 2em;
+}
+
+.imgP {
+  width: 77px !important;
+  margin-right: 20px;
+}
+
+.process_text {
+  margin: 50px;
+  margin-top: 125px;
+  /* margin-left: 100px !important; */
+}
+
 .home_text h1 {
   color: #C72D24;
 }
@@ -124,6 +179,30 @@ header {
   border-radius: 6px;
   padding: 6px 20px;
   background-color: white;
+}
+
+table tr th input {
+  border: 2px solid #C72D24;
+  border-radius: 6px;
+}
+
+.proccesText a {
+  color:#C72D24;
+  border: 2px solid #C72D24;
+  border-radius: 6px;
+  padding: 6px 20px;
+  background-color: white;
+}
+
+table {
+  /* margin-bottom: 40px; */
+}
+
+.h1P {
+  margin-bottom: 25px;
+}
+.proccesIn {
+  color: #AB945B;
 }
 
 .navigation li a {
