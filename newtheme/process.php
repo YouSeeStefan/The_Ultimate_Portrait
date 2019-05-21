@@ -35,7 +35,8 @@ Template Name: Process
             <tr class="spaceUnder">
               <td> <img class="imgP" src="../wp-content/themes/newtheme/img/procces-3.png" alt=""> </td>
               <td>Collection of personal objects Daniel Jeremy will select or make images of the person to be portrayed</td>
-            </tr>
+            </tr> 
+            
             <tr class="spaceUnder">
               <td> <img class="imgP" src="../wp-content/themes/newtheme/img/procces-4.png" alt=""> </td>
               <td>Daniel Jeremy will make studies. Then Daniel Jeremy will start an intense process of puzzling, composing and assembling. This may take up to 6 months.</td>
