@@ -54,7 +54,7 @@ Template Name: homepage
         </div>
       </div>
     </div>
-    <div class="col-2" style="padding: 0;">
+    <div class="col-2 navCol" style="padding: 0;">
 
         <?php wp_nav_menu(
           array(

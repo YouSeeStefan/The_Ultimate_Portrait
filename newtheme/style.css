@@ -46,15 +46,15 @@ div .paddingText {
 }
 
 .test {
-  height: 100vh !important;
+  min-height: 100vh !important;
 }
 
 .rowC {
-  height: 50vh !important;
+  min-height: 50vh !important;
 }
 
 .rowF {
-  height: 50vh !important;
+  min-height: 50vh !important;
 }
 
 .paddingImg {
@@ -126,6 +126,10 @@ header {
   background-color: white;
 }
 
+.navCol {
+  
+}
+
 .navigation li a {
 color: white;
 text-decoration: none;
@@ -177,5 +181,5 @@ footer h3 {
 }
 
 .footerC {
-  height: 50vh !important;
+  min-height: 50vh !important;
 }
