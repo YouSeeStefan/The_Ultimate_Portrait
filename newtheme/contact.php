@@ -1,55 +1,60 @@
-<?php /* Template Name: Contact */ ?>
-
-<?php get_header();?>
+<?php
+/*
+Template Name: Process
+*/
+?>
+<?php get_header(); ?>
 
 <div class="container-fluid">
   <div class="row">
     <div class="col-10 no-padding">
-      <div class="row rowC">
-      <div class="col-12">
-        <div class="contactPage">
-          <h1><?php the_title();?></h1>
-          <div class="contactInfo">
-            <?php if (have_posts()) : while(have_posts()) : the_post();?>
-              <?php the_content();?>
-            <?php endwhile; endif;?>
-          </div>
+      <div class="row test">
+      <div class="col-6">
+        <div class="stopM">
+
+
+        <img class="contactImg" src="../wp-content/themes/newtheme/img/img.jpg" alt="">
+
+      </div>
+
+      </div>
+      <div class="col-5 proccesText">
+        <div class="process_text">
+
+          <h1><?php the_title(); ?></h1><br>
+
+          <p> <b>Telephone </b> +31 614 489 594</p>
+          <p> <b>Email </b> naam@gmail.com</p>
+          <p> <b>KVK </b> 34334396</p>
+          <p> <b>IBAN </b> NL61 INGB 0002645082</p><br><br><br><br><br><br>
+
+          <h1 class="font">I AM INTERESTED CALL ME</h1>
+          <?php echo do_shortcode("[contact-form-7 id='212' title='ContactForm']");?>
+
 
         </div>
-</div>
 
-  </div>
-  <div class="row rowF">
-  <div class="col">
-    <footer class="footerC">
-      <div class="footerTables">
-        <table>
-          <tr>
-            <td><h3 class="lineHight">I WANT<br>TO BE<br><span class="called">CALLED</span></h3></td>
-            <td> <a class="clearTD">ddddd</a> </td>
-            <td class="form"><?php echo do_shortcode("[contact-form-7 id='168' title='Contact form 1']");?></td>
-          </tr>
-          </tr>
-        </table>
       </div>
-    </footer>
-    </body>
-  </div>
-  </div>
-  </div>
-  <div class="col-2" style="padding: 0;">
+      </div>
+      <div class="row">
+        <div class="col">
+        <?php get_footer(); ?>
+        </div>
+      </div>
+    </div>
+    <div class="col-2" style="padding: 0;">
 
-  <?php wp_nav_menu(
-    array(
-      'theme_location' => 'top-menu',
-      'menu_class' => 'navigation'
-    )
-  ); ?>
+        <?php wp_nav_menu(
+          array(
+            'theme_location' => 'top-menu',
+            'menu_class' => 'navigation'
+          )
+        ); ?>
 
-  <img class="sign" src="wp-content/themes/newtheme/img/handtekening.svg" alt="">
+        <img class="sign" src="../wp-content/themes/newtheme/img/handtekening.svg" alt="">
 
-  </div>
-
-  </div>
+    </div>
 
   </div>
+
+</div>
