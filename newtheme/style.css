@@ -98,9 +98,11 @@ div .paddingText {
 }
 
 .paddingImg {
-  position: relative;
+  /* position: relative;
   top: 50%;
-  transform: translateY(-50%);
+  transform: translateY(-50%); */
+
+  padding: 2em 0 0 2em;
 }
 
 span {
@@ -244,6 +246,19 @@ table {
   margin: 0 auto;
 }
 
+/* homepage */
+
+.slider-image {
+  vertical-align: middle; /* remove the vertical gap under inline level elements */
+
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
 /* footer */
 
 label {
@@ -265,4 +280,45 @@ footer h3 {
 
 .footerC {
   min-height: 50vh !important;
+}
+
+
+
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  right: 0;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
 }

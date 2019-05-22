@@ -1,4 +1,4 @@
-<?php /* Template Name: kaas */ ?>
+<?php /* Template Name: Single portrait */ ?>
 
 <?php get_header(); ?>
 

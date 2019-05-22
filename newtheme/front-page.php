@@ -22,7 +22,7 @@ Template Name: homepage
 
               ?>
               <div class="testimonial">
-                <img class="portret" src="<?php echo $imageurl; ?>" alt="<?php echo $title; ?>">
+                <img class="slider-image" src="<?php echo $imageurl; ?>" alt="<?php echo $title; ?>">
               </div>
             <?php endwhile; ?>
 
@@ -35,7 +35,7 @@ Template Name: homepage
         <div class="home_text">
 
 
-          <h1><?php the_title(); ?></h1>
+          <h1>THE ULTIMATE PORTRAIT</h1>
 
           <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
               <?php the_content(); ?>
@@ -63,7 +63,7 @@ Template Name: homepage
           )
         ); ?>
 
-        <img class="sign" src="wp-content/themes/newtheme/img/handtekening.svg" alt="">
+        <img class="sign" src="wp-content/themes/The_Ultimate_Portrait/newtheme/img/handtekening.svg" alt="">
 
     </div>
 
