@@ -64,7 +64,7 @@ h6 {
   margin-top: 10%;
 }
 
-div .paddingText {
+div .homeTextPadding {
   padding-left: 100px !important;
 }
 
@@ -282,7 +282,7 @@ footer h3 {
   min-height: 50vh !important;
 }
 
-
+/* responsive nav */
 
 .sidenav {
   height: 100%; /* 100% Full-height */
@@ -295,6 +295,7 @@ footer h3 {
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 60px; /* Place content 60px from the top */
   transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  display: none;
 }
 
 .sidenav a {
@@ -321,4 +322,30 @@ footer h3 {
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
+}
+
+.responsiveMenuIcon {
+  font-size: 30px;
+  cursor: pointer;
+  position: fixed;
+  z-index: 1;
+  right: 15px;
+  color: black;
+  display: none;
+}
+
+/* temp */
+
+@media only screen and (max-width: 1200px) {
+  .navCol {
+    display: none;
+  }
+
+  .responsiveMenuIcon {
+    display: initial;
+  }
+
+  .sidenav {
+    display: initial;
+  }
 }

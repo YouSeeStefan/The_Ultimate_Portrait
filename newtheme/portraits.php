@@ -11,17 +11,12 @@
           $args = array('post_type' => 'portrait', 'posts_per_page' => -1);
           $loop = new WP_Query($args);
           while ($loop->have_posts()) : $loop->the_post();
-            the_title();
+            /*  the_title();   */
             $singlePageLink = get_permalink();
             echo '<div class="entry-content">';
             ?>
 
-
-            <h2><?php the_field('title'); ?></h2>
-            <h2><?php the_field('year'); ?></h2>
-            <h2><?php the_field('dimension'); ?></h2>
-
-            <?php
+<?php
 
             $image = get_field('portrait');
 
@@ -31,10 +26,18 @@
             $thumb = $image['sizes'][$size];
 
             if (!empty($image)) : ?>
-              
+
               <a href="<?php echo $singlePageLink; ?>"><img src="<?php echo $thumb; ?>" alt="<?php echo $image['alt']; ?>" class="imgContain" /></a>
 
             <?php endif; ?>
+
+            <h2><?php the_field('title'); ?></h2>
+            <h2><?php the_field('dimension'); ?></h2>
+            <h2><?php the_field('year'); ?></h2>
+            <p><?php the_field('description'); ?></p>
+            <a href="<?php echo $singlePageLink; ?>">Go to the portrait -></a>
+
+            
 
 
             <?php
@@ -43,7 +46,7 @@
 
           ?>
 
-          
+
         </div>
 
       </div>

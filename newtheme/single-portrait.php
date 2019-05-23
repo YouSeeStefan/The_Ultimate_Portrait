@@ -7,19 +7,14 @@
     <div class="col-10 no-padding">
       <div class="row rowC">
         <div class="col-12">
-        <?php
+          <?php
           $args = array('post_type' => 'portrait', 'posts_per_page' => -1);
           $loop = new WP_Query($args);
-         
-            the_title();
+          while ($loop->have_posts()) : $loop->the_post();
+            /*  the_title();   */
             $singlePageLink = get_permalink();
             echo '<div class="entry-content">';
             ?>
-
-
-            <h2><?php the_field('title'); ?></h2>
-            <h2><?php the_field('year'); ?></h2>
-            <h2><?php the_field('dimension'); ?></h2>
 
             <?php
 
@@ -31,17 +26,53 @@
             $thumb = $image['sizes'][$size];
 
             if (!empty($image)) : ?>
-              
+
               <a href="<?php echo $singlePageLink; ?>"><img src="<?php echo $thumb; ?>" alt="<?php echo $image['alt']; ?>" class="imgContain" /></a>
+
+            <?php endif; ?>
+
+            <h2><?php the_field('title'); ?></h2>
+            <h2><?php the_field('dimension'); ?></h2>
+            <h2><?php the_field('year'); ?></h2>
+            <p><?php the_field('description'); ?></p>
+            
+
+
+            <?php
+
+            $images = get_field('process_images_gallery');
+
+            if ($images) : ?>
+
+              <?php foreach ($images as $image) : ?>
+
+                <a href="<?php echo $image['url']; ?>">
+                  <img src="<?php echo $image['sizes']['thumbnail']; ?>" alt="<?php echo $image['alt']; ?>" />
+                </a>
+                <p><?php echo $image['caption']; ?></p>
+
+              <?php endforeach; ?>
 
             <?php endif; ?>
 
 
             <?php
+
+            $image = get_field('stopmotion');
+
+            if (!empty($image)) : ?>
+
+              <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+
+            <?php endif; ?>
+
+            <?php
             echo '</div>';
-          
+          endwhile;
 
           ?>
+
+
         </div>
 
       </div>
