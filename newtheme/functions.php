@@ -1,5 +1,22 @@
 <?php
 
+add_filter('style_loader_tag', 'codeless_remove_type_attr', 10, 2);
+add_filter('script_loader_tag', 'codeless_remove_type_attr', 10, 2);
+add_filter('autoptimize_html_after_minify', 'codeless_remove_type_attr', 10, 2);
+function codeless_remove_type_attr($tag, $handle)
+{
+    return preg_replace("/type=['\"]text\/(javascript|css)['\"]/", '', $tag);
+}
+
+// add_filter('nav_menu_css_class' , 'special_nav_class' , 10 , 2);
+
+// function special_nav_class ($classes, $item) {
+//     if (in_array('current-menu-item', $classes) ){
+//         $classes[] = 'active ';
+//     }
+//     return $classes;
+// }
+
 function load_stylesheets(){
   wp_register_style('bootstrap', get_template_directory_uri() . '/css/bootstrap.min.css', array(), false, 'all');
   wp_enqueue_style('bootstrap');

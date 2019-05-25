@@ -31,8 +31,6 @@ $(document).ready(function(){
         ]
       });
     });
-
-    
     
     function openNav() {
       if (matchMedia) {
@@ -42,12 +40,13 @@ $(document).ready(function(){
         WidthChange(mq);
         }
         
-        
         function WidthChange(mq) {
         if (mq.matches) {
-          document.getElementById("mySidenav").style.width = "250px";
+          document.getElementById("mySidenav").style.width = "17em";
+          document.getElementById("responsiveMenuIconBars").style.display = "none";
         } else {
           document.getElementById("mySidenav").style.width = "100%";
+          document.getElementById("responsiveMenuIconBars").style.display = "none";
         }
         
         }
@@ -57,4 +56,5 @@ $(document).ready(function(){
     /* Set the width of the side navigation to 0 */
     function closeNav() {
       document.getElementById("mySidenav").style.width = "0";
+      document.getElementById("responsiveMenuIconBars").style.display = "initial";
     }

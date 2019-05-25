@@ -35,7 +35,7 @@
             <h2><?php the_field('dimension'); ?></h2>
             <h2><?php the_field('year'); ?></h2>
             <p><?php the_field('description'); ?></p>
-            
+
 
 
             <?php
@@ -88,11 +88,11 @@
                   <td> <a class="clearTD">ddddd</a> </td>
                   <td class="form"><?php echo do_shortcode("[contact-form-7 id='168' title='Contact form 1']"); ?></td>
                 </tr>
-                </tr>
+                
               </table>
             </div>
           </footer>
-          </body>
+
         </div>
       </div>
     </div>
@@ -112,3 +112,4 @@
   </div>
 
 </div>
+</body>
