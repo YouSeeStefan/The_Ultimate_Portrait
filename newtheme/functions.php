@@ -32,6 +32,20 @@ function load_stylesheets(){
 
   wp_register_style('style', get_template_directory_uri() . '/style.css', array(), false, 'all');
   wp_enqueue_style('style');
+
+
+
+  wp_register_style('navigation_style', get_template_directory_uri() . '/navigation.css', array(), false, 'all');
+  wp_enqueue_style('navigation_style');
+
+  wp_register_style('home_style', get_template_directory_uri() . '/home.css', array(), false, 'all');
+  wp_enqueue_style('home_style');
+
+  wp_register_style('navigation_style', get_template_directory_uri() . '/navigation.css', array(), false, 'all');
+  wp_enqueue_style('navigation_style');
+
+  wp_register_style('portraits_style', get_template_directory_uri() . '/portraits.css', array(), false, 'all');
+  wp_enqueue_style('portraits_style');
 }
 add_action('wp_enqueue_scripts', 'load_stylesheets');
 

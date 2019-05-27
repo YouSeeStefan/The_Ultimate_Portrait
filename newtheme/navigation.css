@@ -1,0 +1,158 @@
+/*
+Theme Name: Test Theme
+Author: Stefan Stekelenburg, Frank van der Velde
+ */
+
+.sign {
+    max-width: 170px;
+    position: absolute;
+    bottom: -70px;
+    margin-left: 10px;
+    transform: translate(-50%, -50%);
+}
+
+.menu-nav-container {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+    max-height: 100vh;
+}
+
+.navigation {
+    font-size: 23px;
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.navigation li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 100;
+}
+
+.navigation li {
+    margin: 2em 0;
+}
+
+.navigation .current_page_item a {
+    font-weight: 400;
+}
+
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #C72D24;
+    max-height: 100vh;
+    overflow-x: hidden;
+    transition: 0.5s;
+    display: none;
+    z-index: 4;
+}
+
+.sidenav a {
+    text-decoration: none;
+    font-size: 23px;
+    margin: 2em 0;
+    font-weight: 400;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #AB945B;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0px;
+    right: 21px;
+    font-size: 48px;
+    margin: 0;
+    color: #AB945B;
+    z-index: 4;
+}
+
+
+.responsiveMenuIcon {
+    font-size: 33px;
+    cursor: pointer;
+    position: fixed;
+    z-index: 1;
+    right: 15px;
+    color: #AB945B;
+    display: none;
+    margin: 15px 7px 0 0;
+    webkit-transform: scale(1.1, 0.9);
+    -moz-transform: scale(1.1, 0.9);
+    -ms-transform: scale(1.1, 0.9);
+    -o-transform: scale(1.1, 0.9);
+    transform: scale(1.1, 0.9);
+}
+
+.responsiveNavText {
+    display: none;
+    font-size: 33px;
+    position: fixed;
+    color: white;
+    vertical-align: middle;
+    line-height: 82px;
+    font-weight: 600;
+    margin-left: 25px;
+    font-family: Didot !important;
+}
+
+
+@media only screen and (max-width: 1200px) {
+    .bigScreenNav {
+        display: none;
+    }
+
+    .responsiveMenuIcon {
+        display: initial;
+    }
+
+    .sidenav {
+        display: initial;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .navButtonDiv {
+        width: 100%;
+        height: 5em;
+        background-color: #C72D24;
+        position: fixed;
+        z-index: 3;
+    }
+
+    .responsiveNavText {
+        display: initial;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .sign {
+        display: none;
+    }
+}
+
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+}

@@ -47,6 +47,7 @@ $(document).ready(function(){
         } else {
           document.getElementById("mySidenav").style.width = "100%";
           document.getElementById("responsiveMenuIconBars").style.display = "none";
+          // document.getElementById("body").style.position = "fixed";
         }
         
         }
@@ -57,4 +58,5 @@ $(document).ready(function(){
     function closeNav() {
       document.getElementById("mySidenav").style.width = "0";
       document.getElementById("responsiveMenuIconBars").style.display = "initial";
+      // document.getElementById("body").style.position = "initial";
     }
