@@ -13,9 +13,11 @@
   <div id="mySidenav" class="sidenav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
     <?php
+    
     function add_last_nav_item($items)
     {
-      return $items .= '<img class="sign" src="wp-content/themes/The_Ultimate_Portrait/newtheme/img/handtekening.svg" alt="Daniel Jeremy logo"></li>';
+      $linkStart = get_template_directory_uri();
+      return $items .= '<img class="sign" src="'. $linkStart .'/img/handtekening.svg" alt="Daniel Jeremy logo"></li>';
     }
     add_filter('wp_nav_menu_items', 'add_last_nav_item');
 
