@@ -10,7 +10,7 @@
           <?php
           $args = array('post_type' => 'portrait', 'posts_per_page' => -1);
           $loop = new WP_Query($args);
-          while ($loop->have_posts()) : $loop->the_post();
+         
             /*  the_title();   */
             $singlePageLink = get_permalink();
             echo '<div class="entry-content">';
@@ -68,11 +68,11 @@
 
             <?php
             echo '</div>';
-          endwhile;
+          
 
           ?>
 
-
+<?php previous_post_link(); ?>    <?php next_post_link(); ?>
         </div>
 
       </div>

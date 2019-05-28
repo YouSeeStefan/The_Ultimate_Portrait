@@ -41,9 +41,9 @@ Author: Stefan Stekelenburg, Frank van der Velde
         margin: 0 0 8px 0;
     }
 
-    .container-fluid.home {
+    /* .container-fluid.home {
         padding-top: 4em;
-    }
+    } */
 }
 
 .homePortraitButton {

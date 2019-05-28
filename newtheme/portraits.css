@@ -3,4 +3,42 @@ Theme Name: Test Theme
 Author: Stefan Stekelenburg, Frank van der Velde
  */
 
+ .portrait_results {
+     /* display: inline-block; */
+     margin: 0 auto;
+     margin-bottom: 4em;
+ }
+
+ .resultsTextDiv {
+     /* display: inline-block; */
+     max-width: 52em;
+ }
+
+ .resultsTextDiv h2 {
+     color: #000D29;
+ }
+ 
+ .resultsTextDiv span {
+    background-color: #AB945B;
+    color: white;
+    border-radius: 20px;
+    padding: 5px 18px;
+}
+
+.resultsTextDiv p {
+    color: #000D29;
+}
+
+.resultsTextDiv a {
+    color: #C72D24;
+    font-weight: 700;
+    float: right;
+    font-size: 18px;
+}
+
+ 
+ .imgContain {
+    height: 24em;
+    max-width: 19em;
+ }
  

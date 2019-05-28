@@ -136,14 +136,6 @@ tr.spaceUnder>td {
   font-weight: 600;
 }
 
-.bigScreenNav {
-  padding: 0;
-  background-color: #C72D24;
-  height: 100vh;
-  width: 17em;
-  float: right;
-}
-
 table tr th input {
   border: 2px solid #C72D24;
   border-radius: 6px;
@@ -199,4 +191,10 @@ footer h3 {
 
 .footerC {
   min-height: 50vh !important;
+}
+
+@media only screen and (max-width: 768px) {
+  .container-fluid {
+      padding-top: 4em;
+  }
 }
