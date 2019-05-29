@@ -3,30 +3,42 @@ Theme Name: Test Theme
 Author: Stefan Stekelenburg, Frank van der Velde
  */
 
- .portrait_results {
-     /* display: inline-block; */
-     margin: 0 auto;
-     margin-bottom: 4em;
- }
+.portrait_results {
+    /* display: inline-block; */
+    margin: 0 auto;
+    margin-bottom: 4em;
+    overflow: auto;
+    max-width: 52em;
+}
 
- .resultsTextDiv {
-     /* display: inline-block; */
-     max-width: 52em;
- }
+.resultsTextDiv {
+    /* display: inline-block; */
+    max-width: 52em;
+}
 
- .resultsTextDiv h2 {
-     color: #000D29;
- }
- 
- .resultsTextDiv span {
+.resultsTextDiv h2 {
+    color: #000D29;
+}
+
+.pageLinkImage {
+    float: left;
+    display: inline-block;
+    margin-right: 2em;
+}
+
+.portraitInfo {
     background-color: #AB945B;
     color: white;
     border-radius: 20px;
     padding: 5px 18px;
+    /* margin-right: 1em; */
+    display: inline-block;
+    margin-bottom: 0.5em;
 }
 
 .resultsTextDiv p {
     color: #000D29;
+    margin-top: 0.5em;
 }
 
 .resultsTextDiv a {
@@ -36,9 +48,66 @@ Author: Stefan Stekelenburg, Frank van der Velde
     font-size: 18px;
 }
 
- 
- .imgContain {
+.goToArrow {
+    
+}
+
+.portraitsTitle {
+    text-align: center;
+    margin: 1em 0 1em -15em
+}
+
+.imgContain {
     height: 24em;
     max-width: 19em;
- }
- 
+}
+
+@media only screen and (max-width: 1060px) {
+    .portraitsTitle {
+        margin: 1em 0 1em -12em;
+    }
+  }
+
+  @media only screen and (max-width: 855px) {
+    .portraitsTitle {
+        margin: 0.5em 0 0.5em 0em;
+        text-align: start;
+    }
+  }
+
+  @media only screen and (max-width: 500px) {
+      .portrait_results {
+          position: relative;
+          margin-bottom: 1em;
+      }
+    .resultsTextDiv p {
+        display: none;
+    }
+
+    .imgContain {
+        height: 14em;
+        max-width: 10em;
+    }
+
+    .resultTextDiv {
+        position: absolute;
+    bottom: 0;
+    right: 0;
+    }
+
+    .goToPortrait {
+        display: none;
+    }
+
+    .goToArrow {
+        position: absolute;
+    bottom: 0;
+    right: 0;
+    }
+  }
+
+  @media only screen and (max-width: 320px) {
+    .resultsTextDiv p {
+        display: none;
+    }
+  }
