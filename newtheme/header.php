@@ -1,10 +1,13 @@
+<?php 
+$linkBase = get_template_directory_uri();
+?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="wp-content/themes/The_Ultimate_Portrait/newtheme/img/favicon" type="image/x-icon" />
+  <link rel="shortcut icon" href="<?php echo $linkBase ?>/img/favicon" type="image/x-icon" />
   <?php wp_head(); ?>
   <title>The ultimate portrait.</title>
 </head>
@@ -16,8 +19,8 @@
     
     function add_last_nav_item($items)
     {
-      $linkStart = get_template_directory_uri();
-      return $items .= '<img class="sign" src="'. $linkStart .'/img/handtekening.svg" alt="Daniel Jeremy logo"></li>';
+      $linkBase = get_template_directory_uri();
+      return $items .= '<li><img class="sign" src="'. $linkBase .'/img/handtekening.svg" alt="Daniel Jeremy logo"></li>';
     }
     add_filter('wp_nav_menu_items', 'add_last_nav_item');
 

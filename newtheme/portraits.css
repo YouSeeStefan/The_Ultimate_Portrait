@@ -60,6 +60,7 @@ Author: Stefan Stekelenburg, Frank van der Velde
 .imgContain {
     height: 24em;
     max-width: 19em;
+    width: 19em;
 }
 
 @media only screen and (max-width: 1060px) {
@@ -75,7 +76,7 @@ Author: Stefan Stekelenburg, Frank van der Velde
     }
   }
 
-  @media only screen and (max-width: 500px) {
+  @media only screen and (max-width: 531px) {
       .portrait_results {
           position: relative;
           margin-bottom: 1em;
@@ -106,8 +107,20 @@ Author: Stefan Stekelenburg, Frank van der Velde
     }
   }
 
-  @media only screen and (max-width: 320px) {
+  @media only screen and (max-width: 385px) {
     .resultsTextDiv p {
         display: none;
+    }
+
+    .resultsTextDiv h2 {
+        font-size: 34px;
+    }
+
+    .portraitInfo {
+        padding: 5px 13px;
+    }
+
+    .pageLinkImage {
+        margin-right: 1em;
     }
   }
