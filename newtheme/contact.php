@@ -4,7 +4,16 @@ Template Name: Process
 */
 ?>
 <?php get_header(); ?>
+<div class="bigScreenNav" style="padding: 0;">
 
+  <?php wp_nav_menu(
+    array(
+      'theme_location' => 'top-menu',
+      'menu_class' => 'navigation'
+    )
+  ); ?>
+  
+</div>
 <div class="container-fluid">
   <div class="row">
     <div class="col-10 no-padding">
@@ -13,7 +22,7 @@ Template Name: Process
         <div class="stopM">
 
 
-        <img class="contactImg" src="../wp-content/themes/newtheme/img/img.jpg" alt="">
+        <img class="contactImg" src="<?php $linkBase = get_template_directory_uri(); echo $linkBase ?>/img/img.jpg" alt="">
 
       </div>
 
@@ -42,19 +51,6 @@ Template Name: Process
         </div>
       </div>
     </div>
-    <div class="col-2" style="padding: 0;">
-
-        <?php wp_nav_menu(
-          array(
-            'theme_location' => 'top-menu',
-            'menu_class' => 'navigation'
-          )
-        ); ?>
-
-        <img class="sign" src="../wp-content/themes/newtheme/img/handtekening.svg" alt="">
-
-    </div>
-
   </div>
 
 </div>
