@@ -60,14 +60,6 @@ Template Name: About
     Color & Shape.</p>
     
     <br><br>
-    
-    
-
-
-
-
-
-
 
 </div>
     </div>
