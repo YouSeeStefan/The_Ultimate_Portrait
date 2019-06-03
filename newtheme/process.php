@@ -12,7 +12,7 @@ Template Name: Process
       'menu_class' => 'navigation'
     )
   ); ?>
-  
+
 </div>
 <div class="container-fluid home">
 
@@ -32,37 +32,35 @@ Template Name: Process
 
 <?php $linkBase = get_template_directory_uri(); ?>
 
-  <table>
-    <tr class="spaceUnder">
-      <td> <img class="imgP" src="<?php echo $linkBase ?>/img/procces-1.png" alt="step 1"> </td>
-      <td><?php the_field('step_1') ?></td>
-    </tr>
-    <tr class="spaceUnder">
-      <td> <img class="imgP" src="<?php echo $linkBase ?>/img/procces-2.png" alt="step 2"> </td>
-      <td><?php the_field('step_2') ?></td>
-    </tr>
-    <tr class="spaceUnder">
-      <td> <img class="imgP" src="<?php echo $linkBase ?>/img/procces-3.png" alt="step 3"> </td>
-      <td><?php the_field('step_3') ?></td>
-    </tr> 
-    
-    <tr class="spaceUnder">
-      <td> <img class="imgP" src="<?php echo $linkBase ?>/img/procces-4.png" alt="step 4"> </td>
-      <td><?php the_field('step_4') ?></td>
-    </tr>
-    <tr class="spaceUnder">
-      <td> <img class="imgP" src="<?php echo $linkBase ?>/img/procces-5.png" alt="step 5"> </td>
-      <td><?php the_field('step_5') ?></td>
-    </tr>
-  </table>
+<div id="wrapper">
+    <div id="first"> <img class="imgP" src="<?php echo $linkBase ?>/img/procces-1.png" alt=""> </div>
+    <div id="second"><p><?php the_field('step_1') ?>Westion is still new for the best response.</p></div>
+</div>
+<div id="wrapper">
+    <div id="first"> <img class="imgP" src="<?php echo $linkBase ?>/img/procces-2.png" alt=""> </div>
+    <div id="second"><p><?php the_field('step_2') ?>Westion is still new for the best response.</p></div>
+</div>
+<div id="wrapper">
+    <div id="first"> <img class="imgP" src="<?php echo $linkBase ?>/img/procces-3.png" alt=""> </div>
+    <div id="second"><p><?php the_field('step_3') ?>Westion is still new for the best response.</p></div>
+</div>
+<div id="wrapper">
+    <div id="first"> <img class="imgP" src="<?php echo $linkBase ?>/img/procces-4.png" alt=""> </div>
+    <div id="second"><p><?php the_field('step_4') ?>Westion is still new for the best response.</p></div>
+</div>
+<div id="wrapper">
+    <div id="first"> <img class="imgP" src="<?php echo $linkBase ?>/img/procces-5.png" alt=""> </div>
+    <div id="second"><p><?php the_field('step_5') ?>Westion is still new for the best response.</p></div>
+</div>
+
   <h1 class="h1P"><span class="proccesIn">INTERESTED?</span></h1>
   <a href="#">
     To the portraits
   </a>
-  
+
 </div>
     </div>
   </div>
-  
+
 </div>
 <?php get_footer(); ?>

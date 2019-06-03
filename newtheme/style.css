@@ -125,6 +125,20 @@ tr.spaceUnder>td {
   margin-right: 20px;
 }
 
+#wrapper {
+  width: 100%;
+    max-width: 500px;
+    overflow: hidden; /* will contain if #first is longer than #second */
+    margin-bottom: 2em;
+}
+#first {
+    width: 100px;
+    float:left; /* add this */
+}
+#second {
+    overflow: hidden; /* if you don't want #second to wrap below #first */
+}
+
 .process_text {
   margin: 50px;
   margin-top: 125px;
