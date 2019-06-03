@@ -128,15 +128,30 @@ tr.spaceUnder>td {
 #wrapper {
   width: 100%;
     max-width: 500px;
-    overflow: hidden; /* will contain if #first is longer than #second */
+    overflow: hidden;
     margin-bottom: 2em;
 }
 #first {
     width: 100px;
-    float:left; /* add this */
+    float:left;
 }
 #second {
-    overflow: hidden; /* if you don't want #second to wrap below #first */
+    overflow: hidden;
+}
+
+@media only screen and (max-width: 767px) {
+  #wrapper {
+      max-width: unset !important;
+      margin-bottom: 2em;
+  }
+  #first {
+      width: unset !important;
+      float: unset !important;
+      margin-bottom: 1em;
+  }
+  #second {
+      overflow: unset !important;
+  }
 }
 
 .process_text {
