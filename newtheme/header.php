@@ -6,6 +6,8 @@ $linkBase = get_template_directory_uri();
 
 <head>
   <meta charset="utf-8">
+  <meta name="description" content="The ultimate portrait, portfolio van Daniel Jeremy.">
+  <meta name="keywords" content="Daniel Jeremy, Portrait, Prularia, Art, Kunst, Portret, Portfolio">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="google-site-verification" content="ceyepMV2P82BweDJ4BD1d-MFlTeNb-lnBxSWUjR4Xr8" />
   <link rel="shortcut icon" href="<?php echo $linkBase ?>/img/favicon" type="image/x-icon" />
