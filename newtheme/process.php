@@ -34,25 +34,25 @@ Template Name: Process
 
   <table>
     <tr class="spaceUnder">
-      <td> <img class="imgP" src="<?php echo $linkBase ?>/img/procces-1.png" alt=""> </td>
-      <td>Get in contact - by email, phone or via the links below / OR / by Email or phone detailed below</td>
+      <td> <img class="imgP" src="<?php echo $linkBase ?>/img/procces-1.png" alt="step 1"> </td>
+      <td><?php the_field('step_1') ?></td>
     </tr>
     <tr class="spaceUnder">
-      <td> <img class="imgP" src="<?php echo $linkBase ?>/img/procces-2.png" alt=""> </td>
-      <td>Let’s make a deal. Price, format and deadline & 1/3rd deposit (of proposal price)</td>
+      <td> <img class="imgP" src="<?php echo $linkBase ?>/img/procces-2.png" alt="step 2"> </td>
+      <td><?php the_field('step_2') ?></td>
     </tr>
     <tr class="spaceUnder">
-      <td> <img class="imgP" src="<?php echo $linkBase ?>/img/procces-3.png" alt=""> </td>
-      <td>Collection of personal objects Daniel Jeremy will select or make images of the person to be portrayed</td>
+      <td> <img class="imgP" src="<?php echo $linkBase ?>/img/procces-3.png" alt="step 3"> </td>
+      <td><?php the_field('step_3') ?></td>
     </tr> 
     
     <tr class="spaceUnder">
-      <td> <img class="imgP" src="<?php echo $linkBase ?>/img/procces-4.png" alt=""> </td>
-      <td>Daniel Jeremy will make studies. Then Daniel Jeremy will start an intense process of puzzling, composing and assembling. This may take up to 6 months.</td>
+      <td> <img class="imgP" src="<?php echo $linkBase ?>/img/procces-4.png" alt="step 4"> </td>
+      <td><?php the_field('step_4') ?></td>
     </tr>
     <tr class="spaceUnder">
-      <td> <img class="imgP" src="<?php echo $linkBase ?>/img/procces-5.png" alt=""> </td>
-      <td>Presentation of completed work & Delivery</td>
+      <td> <img class="imgP" src="<?php echo $linkBase ?>/img/procces-5.png" alt="step 5"> </td>
+      <td><?php the_field('step_5') ?></td>
     </tr>
   </table>
   <h1 class="h1P"><span class="proccesIn">INTERESTED?</span></h1>

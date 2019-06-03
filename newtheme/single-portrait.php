@@ -72,7 +72,7 @@
 
           if (!empty($image)) : ?>
 
-            <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" style="width: 100%;" />
+            <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" style="width: 100%; border: 1px solid black;" />
 
           <?php endif; ?>
 

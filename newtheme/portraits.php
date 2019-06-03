@@ -9,14 +9,14 @@
 <div class="container-fluid">
   <div class="row flex-nowrap">
     <div class="col-md col-12">
-    <h1 class="portraitsTitle">Portraits</h1>
+    <h1 class="portraitsTitle"><?php the_title(); ?></h1>
     <div class="row">
       <div class="col">
       <?php
       $args = array('post_type' => 'portrait', 'posts_per_page' => -1);
       $loop = new WP_Query($args);
       while ($loop->have_posts()) : $loop->the_post();
-        /*  the_title();   */
+       
         $singlePageLink = get_permalink();
         echo '<div class="portrait_results">';
         ?>

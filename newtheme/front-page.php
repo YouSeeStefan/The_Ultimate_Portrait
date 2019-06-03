@@ -42,26 +42,10 @@ Template Name: homepage
     <div class="col-md-6 align-self-center text-center">
       <div class="home_text">
 
-        <h1>THE ULTIMATE PORTRAIT</h1>
+        <h1 style="text-transform: uppercase;"><?php the_field('head_text'); ?></h1>
 
-        <?php /* the_content(); */ ?>
-        <p>In this series NaadArtworks paints with objects. These items
-          are used in the same manner as George Seurat made
-          paintings out of dots, David Hockney used Polaroids in his
-          work in the 70s and of course the portraits of Giuseppe
-          Arcimboldo. Because of the three-dimensional characteristics
-          of objects, the work sews a fine line between sculpture and
-          painting.</p>
-        <p>The items used aren’t just any material. These objects are
-          from the portrayed and have emotional value. They are stuff
-          that people might collect because it tells a story, or represent
-          a period of life. For example: a pair of glasses, a ticket to a
-          concert, or a lighter that may have ignited a love. It’s about the
-          life experiences, which are collected and saved as
-          memorabilia.</p>
-        <p class="lastAlineaPadding">The portrait not only shows an external appearance, but also
-          reflects the journey through a life.</p>
-
+       <div class="homeTextPadding"><?php the_field('main_text'); ?></div>
+       
         <a href="portraits" class="homePortraitButton">
           To the portraits
         </a>

@@ -24,6 +24,10 @@ Author: Stefan Stekelenburg, Frank van der Velde
     transform: translateX(-50%);
 }
 
+.homeTextPadding {
+    padding-bottom: 1em;
+}
+
 @media only screen and (max-width: 768px) {
     .slick-slide img {
         margin: 3em 0em 1em 0;
@@ -31,10 +35,6 @@ Author: Stefan Stekelenburg, Frank van der Velde
 
     .home_text {
         padding-bottom: 2em;
-    }
-
-    .lastAlineaPadding {
-        padding-bottom: 1em;
     }
 
     .home_text h1 {

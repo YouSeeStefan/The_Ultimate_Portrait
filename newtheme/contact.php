@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Process
+Template Name: Contact
 */
 ?>
 
@@ -34,14 +34,15 @@ Template Name: Process
 
         <h1><?php the_title(); ?></h1><br>
 
-        <p> <b>Telephone </b> +31 614 489 594</p>
-        <p> <b>Email </b> naam@gmail.com</p>
-        <p> <b>KVK </b> 34334396</p>
-        <p> <b>IBAN </b> NL61 INGB 0002645082</p><br><br><br><br><br><br>
+        <p><b>Telephone </b><?php the_field('telephone') ?></p>
+        <p><b>Email </b><?php the_field('email') ?></p>
+        <p><b>KVK </b><?php the_field('kvk') ?></p>
+        <p><b>IBAN </b><?php the_field('iban') ?></p>
 
         <h1 class="font">I AM INTERESTED CALL ME</h1>
         <?php echo do_shortcode("[contact-form-7 id='118' title='ContactForm']"); ?>
       </div>
     </div>
   </div>
+</div>
   <?php get_footer(); ?>

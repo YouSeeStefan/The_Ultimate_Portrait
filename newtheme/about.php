@@ -24,8 +24,22 @@ Template Name: About
 
                       <div class="testimonial">
 
-              <img class="slider-image" src="http://web-logic.nl/wp-content/uploads/2019/05/daniel_about.jpg" alt="">
+            <?php
 
+        $image = get_field('image');
+
+        $size = 'largest';
+        $thumb = $image['sizes'][$size];
+
+        if (!empty($image)) : ?>
+
+          <div class="">
+          <a href="<?php echo $singlePageLink; ?>" class="pageLinkImage">
+          <img src="<?php echo $thumb; ?>" alt="<?php echo $image['alt']; ?>" class="slider-image" />
+          </a>
+          </div>
+
+        <?php endif; ?>
             </div>
 
           
@@ -37,29 +51,13 @@ Template Name: About
 
 
 
-<h2>DANIEL JEREMY</h2>
+<h2 style="text-transform: uppercase; font-size: 3em;"><?php the_field('head_text'); ?></h2>
 
+    <strong><?php the_field('bold_text'); ?></strong>
+  
+    <p>“<?php the_field('quoted_text'); ?>”<p>
 
-
-    <p><strong>
-    Daniel is multitalented artist. Strong<br>
-    at realise artwork and making the<br>
-    design. With a strong love for<br>
-    materials he develops, paints,<br>
-    designs and custom made furniture.</strong>
-    <br>
-    “His work is highly intense and<br>
-    contains craftsmanship. His portraits<br>
-    are spot on and a lust for the eye.”<br>
-    <br>
-    Daniel love’s Drawing, Painting,<br>
-    Sculptures, Assemblage, Portraits,<br>
-    Objects, Furniture, Custom, Upcycle,<br>
-    object trouvé, Inspired by Matter,<br>
-    Emotional, Rhythm & Balance, Dream,<br>
-    Color & Shape.</p>
-    
-    <br><br>
+   <p><?php the_field('normal_text'); ?></p>
 
 </div>
     </div>
