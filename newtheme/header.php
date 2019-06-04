@@ -1,4 +1,4 @@
-<?php 
+<?php
 $linkBase = get_template_directory_uri();
 ?>
 <!DOCTYPE html>
@@ -19,7 +19,7 @@ $linkBase = get_template_directory_uri();
   <div id="mySidenav" class="sidenav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
     <?php
-    
+
     function add_last_nav_item($items)
     {
       $linkBase = get_template_directory_uri();
@@ -32,7 +32,8 @@ $linkBase = get_template_directory_uri();
         'theme_location' => 'top-menu',
         'menu_class' => 'navigation'
       )
-    ); ?>
+    );?>
+
 
 
   </div>

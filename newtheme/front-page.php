@@ -13,7 +13,7 @@ Template Name: homepage
       'menu_class' => 'navigation'
     )
   ); ?>
-  
+
 </div>
 <div class="container-fluid home">
 
@@ -45,7 +45,7 @@ Template Name: homepage
         <h1 style="text-transform: uppercase;"><?php the_field('head_text'); ?></h1>
 
        <div class="homeTextPadding"><?php the_field('main_text'); ?></div>
-       
+
         <a href="portraits" class="homePortraitButton">
           To the portraits
         </a>
@@ -53,4 +53,30 @@ Template Name: homepage
     </div>
   </div>
 </div>
+
+<div id="contact-button"></div>
+
+    <div id="contact-popup">
+
+        <div class="kruisje">kruisje</div>
+
+        <form action="">
+
+            <p class="interested">
+                I AM INTERESTED
+                <span class="gold">CALL ME</span>
+            </p>
+
+            <p class="typefield-txt">Name</p>
+            <input class="typefield-contact type-field-name" type="text" name="Name">
+
+            <p class="typefield-txt">Telephone</p>
+            <input class="typefield-contact type-field-tele" type="text" name="Telephone">
+
+            <button type="submit" class="submit-button"></button>
+
+        </form>
+
+    </div>
+
 <?php get_footer(); ?>

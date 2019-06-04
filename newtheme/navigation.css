@@ -182,3 +182,104 @@ Author: Stefan Stekelenburg, Frank van der Velde
         font-size: 18px;
     }
 }
+
+/* Contact knop */
+
+#contact-button {
+            height: 55px;
+            width: 55px;
+            position: fixed;
+            background-color: #000D29;
+            right: 31px;
+            bottom: 31px;
+            border-radius: 6px;
+            -webkit-box-shadow: 0px 3px 25px 6px rgba(0,0,0,0.26);
+            -moz-box-shadow: 0px 3px 25px 6px rgba(0,0,0,0.26);
+            box-shadow: 0px 3px 25px 6px rgba(0,0,0,0.26);
+            background-image: url(contact-icon.svg);
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        #contact-popup {
+            width: 362px;
+            height: 388px;
+            background-color: #000D29;
+            border-radius: 6px;
+            position: fixed;
+            right: 110px;
+            bottom: 31px;
+            -webkit-box-shadow: 0px 3px 25px 6px rgba(0,0,0,0.26);
+            -moz-box-shadow: 0px 3px 25px 6px rgba(0,0,0,0.26);
+            box-shadow: 0px 3px 25px 6px rgba(0,0,0,0.26);
+            padding-left: 30px;
+            padding-right: 30px;
+            padding-top: 40px;
+            padding-bottom: 40px;
+
+            visibility: hidden;
+            opacity: 0;
+            transition: all 0.5s ease-out;
+        }
+        #contact-popup.active {
+            visibility: visible;
+            opacity: 1;
+        }
+        .interested {
+            font-size: 32px;
+            line-height: 41px;
+            font-family: didot;
+            color: #fff;
+            padding-bottom: 8px;
+            margin: 0px;
+        }
+        .gold {
+            color: #AB945B;
+        }
+        .typefield-txt {
+            padding-bottom: 5px;
+            margin-top: 25px;
+            margin-bottom: 6px;
+            margin-left: 0px;
+            margin-right: 0px;
+            color: #fff;
+            font-size: 23px;
+            font-family: raleway;
+
+        }
+        .typefield-contact {
+            background-color: transparent;
+            border: solid 2px #C72D24;
+            height: 42px;
+            padding: 0px;
+            margin: 0px;
+            border-radius: 6px;
+            color: #fff;
+            padding-left: 15px;
+            font-family: raleway;
+            font-size: 16px;
+        }
+        .type-field-name {
+            width: 283px;
+        }
+        .type-field-tele {
+            width: 232px;
+            float: left;
+        }
+        .submit-button {
+            float: left;
+            width: 35px;
+            margin-left: 16px;
+            height: 46px;
+            background-color: transparent;
+            border: none;
+            background-image: url(arrow.svg);
+            background-repeat: no-repeat;
+            background-position: center right;
+        }
+.kruisje {
+    height: 14px;
+    width: 14px;
+    position: absolute;
+    right: 14px;
+    top: 14px;
+}
