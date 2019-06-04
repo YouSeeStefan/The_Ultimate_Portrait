@@ -25,7 +25,7 @@ Template Name: Contact
 
 
         <img class="contactImg" src="<?php $linkBase = get_template_directory_uri();
-                                      echo $linkBase ?>/img/img.jpg" alt="">
+                                      echo $linkBase ?>/img/img.jpg" alt="Daniel">
 
       </div>
     </div>
