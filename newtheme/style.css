@@ -127,7 +127,7 @@ tr.spaceUnder>td {
 
 .wrapper {
   width: 100%;
-    max-width: 500px;
+    max-width: 600px;
     overflow: hidden;
     margin-bottom: 2em;
 }
@@ -137,6 +137,9 @@ tr.spaceUnder>td {
 }
 .second {
     overflow: hidden;
+}
+.second p {
+  text-align: left;
 }
 
 @media only screen and (max-width: 767px) {
@@ -154,6 +157,15 @@ tr.spaceUnder>td {
   }
   .process_text {
     margin-top: 30px !important;
+  }
+  .second p {
+    text-align: unset;
+  }
+  .stopM {
+    margin-left: 50px !important;
+  }
+  .stopImg {
+    width: 100%;
   }
 }
 
@@ -185,7 +197,7 @@ tr.spaceUnder>td {
 }
 
 .proccesIn {
-  color: #AB945B;
+  color: #C72D24 !important;
 
 }
 
