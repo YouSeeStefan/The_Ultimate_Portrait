@@ -185,13 +185,17 @@ Author: Stefan Stekelenburg, Frank van der Velde
 
 /* Contact knop */
 
+body {
+    margin: 0px;
+    padding: 0px;
+}        
+
 #contact-button {
             height: 55px;
             width: 55px;
             position: fixed;
             background-color: #000D29;
-            /* right: 31px; */
-            right: 298px;
+            right: 31px;
             bottom: 31px;
             border-radius: 6px;
             -webkit-box-shadow: 0px 3px 25px 6px rgba(0,0,0,0.26);
@@ -200,15 +204,32 @@ Author: Stefan Stekelenburg, Frank van der Velde
             background-image: url(contact-icon.svg);
             background-position: center;
             background-repeat: no-repeat;
+            cursor: pointer;
+        }
+#contact-button-mobile {
+            height: 55px;
+            width: 55px;
+            position: fixed;
+            background-color: #000D29;
+            right: 0px;
+            top: 0px;
+            border-radius: 6px;
+            -webkit-box-shadow: 0px 3px 25px 6px rgba(0,0,0,0.26);
+            -moz-box-shadow: 0px 3px 25px 6px rgba(0,0,0,0.26);
+            box-shadow: 0px 3px 25px 6px rgba(0,0,0,0.26);
+            background-image: url(contact-icon.svg);
+            background-position: center;
+            background-repeat: no-repeat;
+            cursor: pointer;
+            display: none;
         }
         #contact-popup {
             width: 362px;
-            height: 388px;
+            height: 400px;
             background-color: #000D29;
             border-radius: 6px;
             position: fixed;
-            /* right: 110px; */
-            right: 377px;
+            right: 110px;
             bottom: 31px;
             -webkit-box-shadow: 0px 3px 25px 6px rgba(0,0,0,0.26);
             -moz-box-shadow: 0px 3px 25px 6px rgba(0,0,0,0.26);
@@ -217,10 +238,9 @@ Author: Stefan Stekelenburg, Frank van der Velde
             padding-right: 30px;
             padding-top: 40px;
             padding-bottom: 40px;
-
             visibility: hidden;
             opacity: 0;
-            transition: all 0.5s ease-out;
+            transition: all 0.3s ease-out;
         }
         #contact-popup.active {
             visibility: visible;
@@ -246,7 +266,7 @@ Author: Stefan Stekelenburg, Frank van der Velde
             color: #fff;
             font-size: 23px;
             font-family: raleway;
-
+            
         }
         .typefield-contact {
             background-color: transparent;
@@ -284,4 +304,47 @@ Author: Stefan Stekelenburg, Frank van der Velde
     position: absolute;
     right: 14px;
     top: 14px;
+    background-image: url(close.svg);
+    background-position: top right;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+@media screen and (max-width: 768px) and (min-width: 0px) {
+    #contact-button {
+        display: none;
+    }
+    #contact-button-mobile {
+        display: block;;
+    }
+    #contact-popup {
+        top: 70px;
+        right: 70px;
+    }
+}
+@media screen and (max-width: 460px) and (min-width: 0px) {
+    #contact-popup {
+        top: 70px;
+        right: 25px;
+        left: 25px;
+        width: auto;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 20px;
+        height: 360px;
+    }
+    .type-field-name {
+        width: 100%;
+    }
+    .type-field-tele {
+        width: 80%;
+    }
+    .interested {
+        font-size: 7vw;
+        line-height: 115%;
+    }
+}
+@media screen and (max-width: 364px) and (min-width: 0px) { 
+    .type-field-tele {
+        width: 75%;
+    }
 }
