@@ -125,31 +125,31 @@ tr.spaceUnder>td {
   margin-right: 20px;
 }
 
-#wrapper {
+.wrapper {
   width: 100%;
     max-width: 500px;
     overflow: hidden;
     margin-bottom: 2em;
 }
-#first {
+.first {
     width: 100px;
     float:left;
 }
-#second {
+.second {
     overflow: hidden;
 }
 
 @media only screen and (max-width: 767px) {
-  #wrapper {
+  .wrapper {
       max-width: unset !important;
       margin-bottom: 2em;
   }
-  #first {
+  .first {
       width: unset !important;
       float: unset !important;
       margin-bottom: 1em;
   }
-  #second {
+  .second {
       overflow: unset !important;
   }
   .process_text {
