@@ -15,6 +15,7 @@ $(document).ready(function(){
 
     });
 
+
       $('.testimonials-container').slick({
         slidesToShow: 1,
         arrows: false,
@@ -69,3 +70,12 @@ $(document).ready(function(){
       document.getElementById("responsiveMenuIconBars").style.display = "initial";
       // document.getElementById("body").style.position = "initial";
     }
+
+$(function () {
+  
+  $("#close").click(function() {
+    $(this).toggleClass("on");
+    $("#contact-popup").toggleClass("active");
+  });
+  
+});
