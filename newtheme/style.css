@@ -167,8 +167,7 @@ tr.spaceUnder>td {
   margin: 0 0 1em 0;
   font-weight: 600;
 }
-
-table tr th input {
+.contactForm input {
   border: 2px solid #C72D24;
   border-radius: 6px;
 }
