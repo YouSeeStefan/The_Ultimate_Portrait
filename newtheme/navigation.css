@@ -185,12 +185,13 @@ Author: Stefan Stekelenburg, Frank van der Velde
 
 /* Contact knop */
 
-    #contact-button {
+#contact-button {
             height: 55px;
             width: 55px;
             position: fixed;
             background-color: #000D29;
-            right: 302px;
+            /* right: 31px; */
+            right: 298px;
             bottom: 31px;
             border-radius: 6px;
             -webkit-box-shadow: 0px 3px 25px 6px rgba(0,0,0,0.26);
@@ -199,18 +200,16 @@ Author: Stefan Stekelenburg, Frank van der Velde
             background-image: url(contact-icon.svg);
             background-position: center;
             background-repeat: no-repeat;
-            cursor: pointer;
-            z-index: 1000;
         }
         #contact-popup {
             width: 362px;
-            height: 400px;
+            height: 388px;
             background-color: #000D29;
             border-radius: 6px;
             position: fixed;
-            right: 382px;
+            /* right: 110px; */
+            right: 377px;
             bottom: 31px;
-            z-index: 1000;
             -webkit-box-shadow: 0px 3px 25px 6px rgba(0,0,0,0.26);
             -moz-box-shadow: 0px 3px 25px 6px rgba(0,0,0,0.26);
             box-shadow: 0px 3px 25px 6px rgba(0,0,0,0.26);
@@ -218,13 +217,22 @@ Author: Stefan Stekelenburg, Frank van der Velde
             padding-right: 30px;
             padding-top: 40px;
             padding-bottom: 40px;
+
             visibility: hidden;
             opacity: 0;
-            transition: all 0.3s ease-out;
+            transition: all 0.5s ease-out;
         }
         #contact-popup.active {
             visibility: visible;
             opacity: 1;
+        }
+        .interested {
+            font-size: 32px;
+            line-height: 41px;
+            font-family: didot;
+            color: #fff;
+            padding-bottom: 8px;
+            margin: 0px;
         }
         .gold {
             color: #AB945B;
@@ -238,7 +246,7 @@ Author: Stefan Stekelenburg, Frank van der Velde
             color: #fff;
             font-size: 23px;
             font-family: raleway;
-            
+
         }
         .typefield-contact {
             background-color: transparent;
@@ -252,6 +260,13 @@ Author: Stefan Stekelenburg, Frank van der Velde
             font-family: raleway;
             font-size: 16px;
         }
+        .type-field-name {
+            width: 283px;
+        }
+        .type-field-tele {
+            width: 232px;
+            float: left;
+        }
         .submit-button {
             float: left;
             width: 35px;
@@ -263,87 +278,10 @@ Author: Stefan Stekelenburg, Frank van der Velde
             background-repeat: no-repeat;
             background-position: center right;
         }
-        .kruisje {
-            height: 14px;
-            width: 14px;
-            position: absolute;
-            right: 14px;
-            top: 14px;
-            background-image: url(img/close.svg);
-            background-position: top right;
-            background-repeat: no-repeat;
-            cursor: pointer;
-        }
-        .type-field-name {
-            width: 283px;
-        }
-        .type-field-tele {
-            width: 232px;
-            float: left;
-        }
-        .interested {
-            font-size: 32px;
-            line-height: 41px;
-            font-family: didot;
-            color: #fff;
-            padding-bottom: 8px;
-            margin: 0px;
-        }
-
-@media screen and (max-width: 1200px) and (min-width: 768px) {
-    #contact-button {
-        right: 24px;
-        bottom: 24px;
-    }
-    #contact-popup {
-        right: 100px;
-        bottom: 24px;
-    }
-}
-@media screen and (max-width: 768px) and (min-width: 0px) {
-    #contact-button {
-        top: 13px;
-        right: 50px;
-        background-color: transparent;
-        box-shadow: none;
-        bottom: 0px;
-        background-image: url(img/contact-icon-gold.svg);
-        background-size: 50%;
-        z-index: 1000;
-    }
-}
-@media screen and (max-width: 768px) and (min-width: 460px) {
-    #contact-popup {
-        top: 100px;
-        right: 25px;
-    }
-}
-@media screen and (max-width: 460px) and (min-width: 0px) {
-    #contact-popup {
-        width: auto;
-        padding-left: 15px;
-        padding-right: 15px;
-        padding-bottom: 20px;
-        height: 404px;
-        left: 25px;
-        right: 25px;
-        top: 100px;
-    }
-}
-@media screen and (max-width: 389px) and (min-width: 0px) {
-    .type-field-name {
-        width: 100%;
-    }
-    .type-field-tele {
-        width: 80%;
-    }
-    .interested {
-        font-size: 7vw;
-        line-height: 115%;
-    }
-}
-@media screen and (max-width: 364px) and (min-width: 0px) { 
-    .type-field-tele {
-        width: 75%;
-    }
+.kruisje {
+    height: 14px;
+    width: 14px;
+    position: absolute;
+    right: 14px;
+    top: 14px;
 }

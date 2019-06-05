@@ -55,7 +55,7 @@ Template Name: Process
 
   <h1 class="h1P"><span class="proccesIn">INTERESTED?</span></h1>
   <a href="contact">
-    To Contact
+    Get in touch
   </a>
 
 </div>

@@ -125,6 +125,55 @@ tr.spaceUnder>td {
   margin-right: 20px;
 }
 
+/* Contact */
+
+.wrapperContact {
+  width: 100%;
+    max-width: 300px;
+    overflow: hidden;
+    margin-bottom: 2em;
+}
+.firstContact {
+    /* width: 250px; */
+    float:left;
+    margin-right: 1em;
+}
+.secondContact {
+  float: left;
+    /* overflow: hidden; */
+    margin-right: 1.5em;
+}
+.thirdContact {
+  float: left;
+    /* overflow: hidden; */
+}
+
+.imgC {
+  max-width: 30px;
+}
+
+.colorC {
+  color: black !important;
+}
+
+input[type="text"]{
+  border: 2px solid #C72D24;
+}
+
+input[type="tel"]{
+  border: 2px solid #C72D24;
+}
+
+input[type="submit"]{
+  background : url("img/arrow-right-solid.svg") no-repeat center center;
+	height :52px;
+	border : none;
+	color : transparent;
+}
+
+
+/* Process naast elkaar */
+
 .wrapper {
   width: 100%;
     max-width: 600px;

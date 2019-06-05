@@ -29,18 +29,25 @@ Template Name: Contact
 
       </div>
     </div>
-    <div class="col-md-6 align-self-center text-center">
+    <div class="col-md-6 align-self-center text-left">
       <div class="process_text">
 
         <h1><?php the_title(); ?></h1><br>
 
         <p><b>Telephone </b><?php the_field('telephone') ?></p>
         <p><b>Email </b><?php the_field('email') ?></p>
-        <p><b>KVK </b><?php the_field('kvk') ?></p>
-        <p><b>IBAN </b><?php the_field('iban') ?></p>
+        <p style="color:#ab945b"><b>KVK </b><?php the_field('kvk') ?></p>
+        <p style="color:#ab945b"><b>IBAN </b><?php the_field('iban') ?></p><br>
 
-        <h1 class="font">I AM INTERESTED CALL ME</h1>
+        <h1 class="font colorC">I AM INTERESTED CALL ME</h1>
         <?php echo do_shortcode("[contact-form-7 id='118' title='ContactForm']"); ?>
+
+        <br>
+        <div class="wrapperContact">
+            <div class="firstContact"> <img class="imgC" src="<?php echo $linkBase ?>/img/facebook.png" alt=""> </div>
+            <div class="secondContact"> <img class="imgC" src="<?php echo $linkBase ?>/img/instagram.png" alt=""> </div>
+            <div class="thirdContact"> <img class="imgC" src="<?php echo $linkBase ?>/img/linkedin.png" alt=""> </div>
+        </div>
       </div>
     </div>
   </div>
