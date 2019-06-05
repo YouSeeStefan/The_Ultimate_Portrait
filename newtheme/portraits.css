@@ -5,25 +5,62 @@ Author: Stefan Stekelenburg, Frank van der Velde
 
 .portrait_results {
     /* display: inline-block; */
-    margin: 0 auto;
-    margin-bottom: 4em;
+    /* margin: 0 auto; */
+    margin-bottom: 3em;
     overflow: auto;
-    max-width: 52em;
-}
-
-.resultsTextDiv {
-    /* display: inline-block; */
-    max-width: 52em;
+    /* max-width: 52em; */
 }
 
 .resultsTextDiv h2 {
     color: #000D29;
 }
 
+.results_image {
+    width: 35%;
+    margin: 0 5% 0 15%;
+    overflow: auto; display: inline-block;
+}
+
+.results_text {
+    width: 40%;
+    margin: 0 0 0 0; display: inline-block;
+    position: relative;
+}
+
+.results_text h2 {
+    font-size: 5vw;
+    margin-top: -0.1em;
+}
+
+.arrowright {
+    height: 1em; margin-left: 17px;
+}
+
+.results_text .portraitsInfo {
+    font-size: 1.3vw;
+}
+
+.results_text p {
+    font-size: 1.5vw; 
+}
+
+.result_text {
+    margin-right: 5em;
+}
+
+.results_text a {
+    font-size: 2vw;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+}
+}
+
+
 .pageLinkImage {
     float: left;
     display: inline-block;
-    margin-right: 2em;
+    
 }
 
 .portraitInfo {
@@ -34,6 +71,23 @@ Author: Stefan Stekelenburg, Frank van der Velde
     /* margin-right: 1em; */
     display: inline-block;
     margin-bottom: 0.5em;
+}
+
+.resultsImageDiv {
+    overflow: auto;
+    display: inline-block;
+    margin-right: 2em;
+    width: 50%;
+}
+
+.resultsTextDiv {
+    display: inline-block; 
+    max-width: 45%;
+}
+
+.resultsImage {
+    max-width: 100%;
+    display: block;
 }
 
 .resultsTextDiv p {
@@ -53,8 +107,10 @@ Author: Stefan Stekelenburg, Frank van der Velde
 }
 
 .portraitsTitle {
-    text-align: center;
-    margin: 1em 0 1em -15em
+    /* text-align: center;
+    margin: 1em 0 1em -15em */
+    /* margin: 1em 0% 1em 14.5%; */
+    margin: 0.6em 0 .6em 14%;
 }
 
 .imgContain {
@@ -63,20 +119,177 @@ Author: Stefan Stekelenburg, Frank van der Velde
     width: 19em;
 }
 
+.textMedium {
+    display: none;
+}
+
+.viewPortrait {
+    display: none;
+}
+
+@media only screen and (max-width: 1430px) {
+    .results_text p {
+        font-size: 1.5vw;
+        
+    }
+
+    .result_text {
+        margin-right: 3em;
+    }
+  }
+
+  @media only screen and (max-width: 1280px) {
+    .result_text {
+        margin-right: 3em;
+    }
+  }
+
+  @media only screen and (max-width: 1200px) {
+    .results_text p {
+        font-size: 1.7vw;
+    }
+  }
+
+  @media only screen and (max-width: 900px) {
+    .results_text p {
+        margin-right: 0em;
+        font-size: 2vw;
+    }
+  }
+
+  @media only screen and (max-width: 900px) {
+    .results_text .textMedium {
+        display: block;
+        font-size: 1.2em;
+        margin-bottom: 0.5em;
+    }
+
+    .results_text .textBig {
+        display: none;
+    }
+
+    .results_text h2 {
+        font-size: 3.5em;
+    }
+
+    .results_text a {
+        font-size: 1.6em;
+    }
+
+    .results_image {
+        margin: 0 5% 0 11%
+    }
+
+    .portraitsTitle {
+        margin: 0.6em 0 .6em 9%;
+    }
+
+    .portrait_results {
+        margin-bottom: 2em;
+    }
+  }
+
+  @media only screen and (max-width: 740px) {
+    .results_text {
+        width: 46%;
+    }
+    .results_image {
+        margin: 0 5% 0 5%;
+        width: 40%;
+    }
+
+    .portraitsTitle {
+        margin: 0.6em 0 0.3em 4%;
+    }
+  }
+
+  @media only screen and (max-width: 660px) {
+    .results_image {
+        margin: 0 3% 0 7%;
+    width: 42%;
+
+    }
+  }
+
+  @media only screen and (max-width: 630px) {
+    .results_text .textMedium {
+        display: none;
+    }
+
+    .results_text a {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        display: block;
+    }
+
+    .results_text {
+        position: relative;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    .viewPortrait{
+        display: inline;
+    }
+
+    .goToPortrait {
+        display: none;
+    }
+
+  }
+
+  @media only screen and (max-width: 600px) {
+    .results_text a {
+        font-size: 1.3em;
+    }
+
+    .results_text a {
+        position: absolute;
+        bottom: 0;
+        left: initial;
+        right: 20;
+        display: block;
+    }
+
+  }
+
+  @media only screen and (max-width: 600px) {
+    .results_text h2 {
+        font-size: 3em;
+    }
+
+  }
+
+  @media only screen and (max-width: 600px) {
+    .viewPortrait {
+        display: none;
+    }
+
+  }
+
+  
+
+
+  
+  
+  
+
+
 @media only screen and (max-width: 1060px) {
     .portraitsTitle {
-        margin: 1em 0 1em -12em;
+      /*  margin: 1em 0 1em -12em; */
     }
   }
 
   @media only screen and (max-width: 855px) {
     .portraitsTitle {
-        margin: 0.5em 0 0.5em 0em;
-        text-align: start;
+        /* margin: 0.5em 0 0.5em 0em;
+        text-align: start; */
     }
   }
 
-  @media only screen and (max-width: 531px) {
+  /* @media only screen and (max-width: 531px) {
       .portrait_results {
           position: relative;
           margin-bottom: 1em;
@@ -105,7 +318,7 @@ Author: Stefan Stekelenburg, Frank van der Velde
     bottom: 0;
     right: 0;
     }
-  }
+  } */
 
   @media only screen and (max-width: 385px) {
     .resultsTextDiv p {
