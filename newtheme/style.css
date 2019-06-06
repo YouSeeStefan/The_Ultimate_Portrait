@@ -243,12 +243,15 @@ input[type="submit"]{
 
 .h1P {
   margin-bottom: 25px;
+  font-size: 52px !important;
 }
 
 .proccesIn {
   color: #C72D24 !important;
 
 }
+
+
 
 /* footer */
 
