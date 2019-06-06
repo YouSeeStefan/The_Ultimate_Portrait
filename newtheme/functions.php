@@ -1,5 +1,22 @@
 <?php
 
+add_filter('style_loader_tag', 'codeless_remove_type_attr', 10, 2);
+add_filter('script_loader_tag', 'codeless_remove_type_attr', 10, 2);
+add_filter('autoptimize_html_after_minify', 'codeless_remove_type_attr', 10, 2);
+function codeless_remove_type_attr($tag, $handle)
+{
+    return preg_replace("/type=['\"]text\/(javascript|css)['\"]/", '', $tag);
+}
+
+// add_filter('nav_menu_css_class' , 'special_nav_class' , 10 , 2);
+
+// function special_nav_class ($classes, $item) {
+//     if (in_array('current-menu-item', $classes) ){
+//         $classes[] = 'active ';
+//     }
+//     return $classes;
+// }
+
 function load_stylesheets(){
   wp_register_style('bootstrap', get_template_directory_uri() . '/css/bootstrap.min.css', array(), false, 'all');
   wp_enqueue_style('bootstrap');
@@ -15,6 +32,23 @@ function load_stylesheets(){
 
   wp_register_style('style', get_template_directory_uri() . '/style.css', array(), false, 'all');
   wp_enqueue_style('style');
+
+
+
+  wp_register_style('navigation_style', get_template_directory_uri() . '/navigation.css', array(), false, 'all');
+  wp_enqueue_style('navigation_style');
+
+  wp_register_style('contact_popup', get_template_directory_uri() . '/contact_popup.css', array(), false, 'all');
+  wp_enqueue_style('contact_popup');
+
+  wp_register_style('home_style', get_template_directory_uri() . '/home.css', array(), false, 'all');
+  wp_enqueue_style('home_style');
+
+  wp_register_style('navigation_style', get_template_directory_uri() . '/navigation.css', array(), false, 'all');
+  wp_enqueue_style('navigation_style');
+
+  wp_register_style('portraits_style', get_template_directory_uri() . '/portraits.css', array(), false, 'all');
+  wp_enqueue_style('portraits_style');
 }
 add_action('wp_enqueue_scripts', 'load_stylesheets');
 
@@ -49,6 +83,12 @@ register_nav_menus(
     'footer-menu' => __('Footer Menu', 'theme'),
   )
 );
+
+function remove_menus() {
+  remove_menu_page( 'edit.php' );                   //Posts
+  remove_menu_page( 'edit-comments.php' );          //Comments
+}
+add_action( 'admin_menu', 'remove_menus' );
 
 add_image_size('smallest', 300, 300, true);
 add_image_size('largest', 800, 800, true);

@@ -1,0 +1,57 @@
+/*
+Theme Name: Test Theme
+Author: Stefan Stekelenburg, Frank van der Velde
+ */
+
+.home_text {
+    display: inline-block;
+    width: 27em;
+    max-width: 100%;
+    text-align: initial;
+}
+
+.slider-image {
+    vertical-align: middle;
+    max-width: 100%;
+    max-height: 100vh;
+    /* remove the vertical gap under inline level elements */
+
+    position: relative;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.homeTextPadding {
+    padding-bottom: 1em;
+}
+
+@media only screen and (max-width: 768px) {
+    .slick-slide img {
+        margin: 3em 0em 1em 0;
+    }
+
+    .home_text {
+        padding-bottom: 2em;
+    }
+
+    .home_text h1 {
+        margin: 0 0 8px 0;
+    }
+
+    /* .container-fluid.home {
+        padding-top: 4em;
+    } */
+}
+
+.homePortraitButton {
+    color: #C72D24;
+    border: 1.5px solid #C72D24;
+    border-radius: 6px;
+    padding: 12px 20px;
+    background-color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+}
