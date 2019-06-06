@@ -232,7 +232,6 @@ Author: Stefan Stekelenburg, Frank van der Velde
             margin-right: 0px;
             color: #fff;
             font-size: 23px;
-            font-family: raleway;
 
         }
         .typefield-contact {
@@ -244,7 +243,6 @@ Author: Stefan Stekelenburg, Frank van der Velde
             border-radius: 6px;
             color: #fff;
             padding-left: 15px;
-            font-family: raleway;
             font-size: 16px;
         }
         .submit-button {
