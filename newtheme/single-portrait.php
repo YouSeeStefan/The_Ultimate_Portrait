@@ -56,7 +56,7 @@
       <div class="col-md-6">
       <div class="col-12  text-center">
           <div class="home_text">
-            <div class="resultsTextDiv">
+            <div class="resultsTextDiv" style="max-width: 100%;">
               <h2><?php the_field('title'); ?></h2>
               <span class="portraitInfo"><?php the_field('dimension'); ?></span>
               <span class="portraitInfo"><?php the_field('year'); ?></span>
