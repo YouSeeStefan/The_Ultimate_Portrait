@@ -3,7 +3,7 @@ Theme Name: Test Theme
 Author: Stefan Stekelenburg, Frank van der Velde
  */
 
-.portrait_results {
+ .portrait_results {
     /* display: inline-block; */
     /* margin: 0 auto; */
     margin-bottom: 3em;
@@ -54,6 +54,8 @@ Author: Stefan Stekelenburg, Frank van der Velde
     right: 0;
     position: absolute;
 }
+}
+
 
 .pageLinkImage {
     float: left;
@@ -249,6 +251,7 @@ Author: Stefan Stekelenburg, Frank van der Velde
         right: 20;
         display: block;
     }
+
   }
 
   @media only screen and (max-width: 600px) {
@@ -294,22 +297,18 @@ Author: Stefan Stekelenburg, Frank van der Velde
     .resultsTextDiv p {
         display: none;
     }
-
     .imgContain {
         height: 14em;
         max-width: 10em;
     }
-
     .resultTextDiv {
         position: absolute;
     bottom: 0;
     right: 0;
     }
-
     .goToPortrait {
         display: none;
     }
-
     .goToArrow {
         position: absolute;
     bottom: 0;
