@@ -257,7 +257,13 @@ input[type="submit"]{
 
 .h1P {
   margin-bottom: 25px;
-  font-size: 52px !important;
+  font-size: 200%;
+}
+
+@media screen and (min-width: 1355px) {
+  .h1P {
+    font-size: 52px !important;
+  }
 }
 
 .proccesIn {
