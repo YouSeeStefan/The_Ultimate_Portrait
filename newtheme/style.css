@@ -158,10 +158,12 @@ tr.spaceUnder>td {
 
 input[type="text"]{
   border: 2px solid #C72D24;
+  width: 100%;
 }
 
 input[type="tel"]{
   border: 2px solid #C72D24;
+  width: 100%;
 }
 
 input[type="submit"]{

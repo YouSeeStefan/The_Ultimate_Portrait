@@ -333,19 +333,19 @@ Author: Stefan Stekelenburg, Frank van der Velde
     }
 }
 @media screen and (max-width: 389px) and (min-width: 0px) {
-        .type-field-name {
-            width: 283px;
-        }
-        .type-field-tele {
-            width: 232px;
-            float: left;
-        }
-        .interested {
-            font-size: 12px;
-            line-height: 41px;
-            font-family: didot;
-            color: #fff;
-            padding-bottom: 8px;
-            margin: 0px;
-        }
+  .type-field-name {
+  width: 100%;
+}
+.type-field-tele {
+  width: 80%;
+}
+.interested {
+  font-size: 7vw;
+  line-height: 115%;
+}
+}
+@media screen and (max-width: 364px) and (min-width: 0px) {
+.type-field-tele {
+  width: 75%;
+}
 }
