@@ -198,6 +198,7 @@ Author: Stefan Stekelenburg, Frank van der Velde
             background-position: center;
             background-repeat: no-repeat;
             z-index: 1000;
+            cursor: pointer;
         }
         #contact-popup {
             width: 362px;
