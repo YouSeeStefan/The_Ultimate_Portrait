@@ -30,7 +30,7 @@ Template Name: Contact
       </div>
     </div>
     <div class="col-md-6 align-self-center text-left">
-      <div class="process_text">
+      <div class="contact_text">
 
         <h1><?php the_title(); ?></h1><br>
 
@@ -44,9 +44,9 @@ Template Name: Contact
 
         <br>
         <div class="wrapperContact">
-            <div class="firstContact"> <img class="imgC" src="<?php echo $linkBase ?>/img/facebook.png" alt=""> </div>
-            <div class="secondContact"> <img class="imgC" src="<?php echo $linkBase ?>/img/instagram.png" alt=""> </div>
-            <div class="thirdContact"> <img class="imgC" src="<?php echo $linkBase ?>/img/linkedin.png" alt=""> </div>
+            <div class="firstContact"> <a href="#"><img class="imgC" src="<?php echo $linkBase ?>/img/facebook.png" alt=""></a> </div>
+            <div class="secondContact"> <a href="#"><img class="imgC" src="<?php echo $linkBase ?>/img/instagram.png" alt=""></a> </div>
+            <div class="thirdContact"> <a href="#"><img class="imgC" src="<?php echo $linkBase ?>/img/linkedin.png" alt=""></a> </div>
         </div>
       </div>
     </div>
