@@ -118,7 +118,7 @@ Author: Stefan Stekelenburg, Frank van der Velde
     color: #AB945B;
     display: none;
     margin: 15px 7px 0 0;
-    webkit-transform: scale(1.1, 0.9);
+    -webkit-transform: scale(1.1, 0.9);
     -moz-transform: scale(1.1, 0.9);
     -ms-transform: scale(1.1, 0.9);
     -o-transform: scale(1.1, 0.9);
@@ -194,9 +194,6 @@ Author: Stefan Stekelenburg, Frank van der Velde
             right: 302px;
             bottom: 31px;
             border-radius: 6px;
-            -webkit-box-shadow: 0px 3px 25px 6px rgba(0,0,0,0.26);
-            -moz-box-shadow: 0px 3px 25px 6px rgba(0,0,0,0.26);
-            box-shadow: 0px 3px 25px 6px rgba(0,0,0,0.26);
             background-image: url(contact-icon.svg);
             background-position: center;
             background-repeat: no-repeat;
@@ -212,14 +209,10 @@ Author: Stefan Stekelenburg, Frank van der Velde
             right: 382px;
             bottom: 31px;
             z-index: 1000;
-            -webkit-box-shadow: 0px 3px 25px 6px rgba(0,0,0,0.26);
-            -moz-box-shadow: 0px 3px 25px 6px rgba(0,0,0,0.26);
-            box-shadow: 0px 3px 25px 6px rgba(0,0,0,0.26);
             padding-left: 30px;
             padding-right: 30px;
             padding-top: 40px;
             padding-bottom: 40px;
-
             visibility: hidden;
             opacity: 0;
             transition: all 0.5s ease-out;
@@ -280,7 +273,7 @@ Author: Stefan Stekelenburg, Frank van der Velde
             width: 283px;
         }
         .type-field-tele {
-            width: 232px;
+            width: 250px !important;
             float: left;
         }
         .interested {
@@ -302,7 +295,7 @@ Author: Stefan Stekelenburg, Frank van der Velde
         bottom: 24px;
     }
   }
-    @media screen and (max-width: 768px) and (min-width: 0px) {
+@media screen and (max-width: 768px) and (min-width: 0px) {
    #contact-button {
      top: 13px;
         right: 50px;
@@ -332,6 +325,13 @@ Author: Stefan Stekelenburg, Frank van der Velde
         top: 100px;
     }
 }
+    .submit-button {
+            width: 20%;
+            margin-left: 0px;
+        }
+        .type-field-tele {
+            width: 80% !important;
+        }
 @media screen and (max-width: 389px) and (min-width: 0px) {
   .type-field-name {
   width: 100%;
@@ -343,6 +343,9 @@ Author: Stefan Stekelenburg, Frank van der Velde
   font-size: 7vw;
   line-height: 115%;
 }
+    #contact-popup {
+        height: 350px;
+    }
 }
 @media screen and (max-width: 364px) and (min-width: 0px) {
 .type-field-tele {
