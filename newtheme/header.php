@@ -41,4 +41,29 @@ $linkBase = get_template_directory_uri();
   <div class="navButtonDiv">
     <span class="responsiveNavText">Daniel Jeremy</span>
     <span class="responsiveMenuIcon" id="responsiveMenuIconBars" onclick="openNav()">&#9776;</span>
+    <div id="contact-button"></div>
+
+    <div id="contact-popup">
+
+        <div class="kruisje" id="close"></div>
+
+
+            <div class="interested">
+                I AM INTERESTED
+                <span class="gold">CALL ME</span>
+            </div>
+
+
+        <form action="">
+            <p class="typefield-txt">Name</p>
+            <input class="typefield-contact type-field-name" type="text" name="Name">
+
+            <p class="typefield-txt">Telephone</p>
+            <input class="typefield-contact type-field-tele" type="text" name="Telephone">
+
+            <button type="submit" class="submit-button"></button>
+
+        </form>
+
+    </div>
   </div>

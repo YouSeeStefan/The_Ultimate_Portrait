@@ -54,29 +54,4 @@ Template Name: homepage
   </div>
 </div>
 
-<div id="contact-button"></div>
-
-    <div id="contact-popup">
-
-        <div class="kruisje">kruisje</div>
-
-        <form action="">
-
-            <p class="interested">
-                I AM INTERESTED
-                <span class="gold">CALL ME</span>
-            </p>
-
-            <p class="typefield-txt">Name</p>
-            <input class="typefield-contact type-field-name" type="text" name="Name">
-
-            <p class="typefield-txt">Telephone</p>
-            <input class="typefield-contact type-field-tele" type="text" name="Telephone">
-
-            <button type="submit" class="submit-button"></button>
-
-        </form>
-
-    </div>
-
 <?php get_footer(); ?>
