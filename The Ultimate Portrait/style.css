@@ -1,7 +1,15 @@
 /*
-Theme Name: Test Theme
-Author: Stefan Stekelenburg, Frank van der Velde
+Theme Name: The Ultimate Portrait
+Author: Frank van der Velde, Stefan Stekelenburg
+Theme URI:    None;
+Description:  The ultimate portrait theme, gemaakt voor Daniel Jeremy als examen opdracht van het Media College Amsterdam door examen groepje C2.2. Groeps leden: Frank, Owen, Stefan, Thomas, Erdal.
+Author URI:   http://frankvelde.nl
+Version:      1.1
  */
+
+li a .wp-not-current-submenu.menu-top.menu-icon-tools.menu-top-last {
+  display: none !important;
+}
 
 @font-face {
   font-family: Didot;
@@ -134,23 +142,26 @@ tr.spaceUnder>td {
 
 .wrapperContact {
   width: 100%;
-    max-width: 300px;
-    overflow: hidden;
-    margin-bottom: 2em;
+  max-width: 300px;
+  overflow: hidden;
+  margin-bottom: 2em;
 }
+
 .firstContact {
-    /* width: 250px; */
-    float:left;
-    margin-right: 1em;
+  /* width: 250px; */
+  float: left;
+  margin-right: 1em;
 }
+
 .secondContact {
   float: left;
-    /* overflow: hidden; */
-    margin-right: 1.5em;
+  /* overflow: hidden; */
+  margin-right: 1.5em;
 }
+
 .thirdContact {
   float: left;
-    /* overflow: hidden; */
+  /* overflow: hidden; */
 }
 
 .imgC {
@@ -161,23 +172,23 @@ tr.spaceUnder>td {
   color: black !important;
 }
 
-input[type="text"]{
+input[type="text"] {
   border: 2px solid #C72D24;
   width: 100%;
   border-radius: 6px;
 }
 
-input[type="tel"]{
+input[type="tel"] {
   border: 2px solid #C72D24;
   width: 100%;
   border-radius: 6px;
 }
 
-input[type="submit"]{
-  background : url("img/arrow-right-solid.svg") no-repeat center center;
-	height :52px;
-	border : none;
-	color : transparent;
+input[type="submit"] {
+  background: url("img/arrow-right-solid.svg") no-repeat center center;
+  height: 52px;
+  border: none;
+  color: transparent;
 }
 
 
@@ -185,34 +196,40 @@ input[type="submit"]{
 
 .wrapper {
   width: 100%;
-    max-width: 600px;
-    overflow: hidden;
-    margin-bottom: 2em;
+  max-width: 600px;
+  overflow: hidden;
+  margin-bottom: 2em;
 }
+
 .first {
-    width: 100px;
-    float:left;
+  width: 100px;
+  float: left;
 }
+
 .second {
-    overflow: hidden;
+  overflow: hidden;
 }
+
 .second p {
   text-align: left;
 }
 
 @media only screen and (max-width: 767px) {
   .wrapper {
-      max-width: unset !important;
-      margin-bottom: 2em;
+    max-width: unset !important;
+    margin-bottom: 2em;
   }
+
   .first {
-      width: unset !important;
-      float: unset !important;
-      margin-bottom: 1em;
+    width: unset !important;
+    float: unset !important;
+    margin-bottom: 1em;
   }
+
   .second {
-      overflow: unset !important;
+    overflow: unset !important;
   }
+
   .process_text {
     margin-top: 30px !important;
   }
@@ -220,12 +237,15 @@ input[type="submit"]{
   .contact_text {
     margin-top: 30px !important;
   }
+
   .second p {
     text-align: unset;
   }
+
   .stopM {
     margin-left: 50px !important;
   }
+
   .stopImg {
     width: 100%;
   }
@@ -307,7 +327,7 @@ footer h3 {
 
 @media only screen and (max-width: 768px) {
   .container-fluid {
-      padding-top: 4em;
+    padding-top: 4em;
   }
 }
 
@@ -315,13 +335,13 @@ footer h3 {
 
 ::-webkit-scrollbar {
   /* width: 6px; */
-	background-color: #F5F5F5;
+  background-color: #F5F5F5;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-	background-color: #F5F5F5;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #F5F5F5;
 }
 
 /* Handle */
