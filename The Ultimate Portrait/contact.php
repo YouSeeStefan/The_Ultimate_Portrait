@@ -34,12 +34,12 @@ Template Name: Contact
 
         <h1><?php the_title(); ?></h1><br>
 
-        <p><b>Telephone </b><?php the_field('telephone') ?></p>
-        <p><b>Email </b><?php the_field('email') ?></p>
+        <p><b>TELEPHONE </b><?php the_field('telephone') ?></p>
+        <p><b>EMAIL </b><?php the_field('email') ?></p>
         <p style="color:#ab945b"><b>KVK </b><?php the_field('kvk') ?></p>
         <p style="color:#ab945b"><b>IBAN </b><?php the_field('iban') ?></p><br>
 
-        <h1 class="font colorC">I AM INTERESTED CALL ME</h1>
+        <h1 class="font colorC">I WANT THE ULTIMATE PORTRAIT</h1>
         <?php echo do_shortcode("[contact-form-7 id='118' title='ContactForm']"); ?>
 
         <br>
