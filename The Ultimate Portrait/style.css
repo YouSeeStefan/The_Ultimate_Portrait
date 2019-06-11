@@ -249,7 +249,10 @@ input[type="submit"] {
   }
 
   .stopM {
-    margin-left: 50px !important;
+    margin-left: unset !important;
+    margin-right: unset;
+    margin-bottom: unset;
+    margin-top: 50px;
   }
 
   .stopImg {
