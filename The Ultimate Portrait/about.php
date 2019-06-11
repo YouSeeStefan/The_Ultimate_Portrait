@@ -59,9 +59,9 @@ Template Name: About
 
    <p><?php the_field('normal_text'); ?></p></div>
 
-   <span class="label success">Artist</span>
-       <span class="label success">Exclusive</span>
-       <span class="label success">Portrait</span>
+   <!-- <span class="label success">Artist</span>
+   <span class="label success">Exclusive</span>
+   <span class="label success">Portrait</span> -->
 
 </div>
     </div>
