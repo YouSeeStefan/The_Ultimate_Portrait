@@ -138,6 +138,12 @@ tr.spaceUnder>td {
   margin-right: 20px;
 }
 
+@media only screen and (max-width: 767px) {
+  .imgP {
+    margin-right: unset;
+  }
+}
+
 /* Contact */
 
 .wrapperContact {
