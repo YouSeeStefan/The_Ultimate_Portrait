@@ -5,18 +5,11 @@ Template Name: About
 ?>
 
 <?php get_header(); ?>
-<div class="bigScreenNav" style="padding: 0;">
-
-  <?php wp_nav_menu(
-    array(
-      'theme_location' => 'top-menu',
-      'menu_class' => 'navigation'
-    )
-  ); ?>
-
-</div>
-<div class="container-fluid home">
-  <div class="row" style="height: 100vh;">
+<div class="container-fluid">
+  <div class="row flex-nowrap">
+    <div class="col-md col-12">
+   
+    <div class="row" style="height: 100vh;">
     <div class="col-md-6 align-self-center">
         <div class="container testimonials-container paddingImg">
 
@@ -65,6 +58,18 @@ Template Name: About
 
 </div>
     </div>
+  </div>
+    </div>
+    <div class="col-md-3 col-12 bigScreenNav sticky" style="padding: 0;">
+
+<?php wp_nav_menu(
+  array(
+    'theme_location' => 'top-menu',
+    'menu_class' => 'navigation'
+  )
+); ?>
+
+</div>
   </div>
 </div>
 <?php get_footer(); ?>
