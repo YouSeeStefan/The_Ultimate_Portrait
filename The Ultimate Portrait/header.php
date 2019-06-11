@@ -65,5 +65,24 @@ $linkBase = get_template_directory_uri();
 
         </form>
 
+        <?php
+          if(isset($_POST['submit'])){
+              $to = "contactformulier@oweno.nl"; // this is your Email address
+
+              $mail = $_POST['mail'];
+
+              $name = $_POST['Name'];
+              $telefoon = $_POST['telefoon'];
+              $subject = "Mij graag terug bellen";
+              $message = $name . " " . $mail . " " . $telefoon . "
+
+          bericht:" . "\n\n" . $_POST['message'];
+
+              $headers = "From:" . $to;
+              mail($to,$subject,$message,$headers);
+              header('Location: contact');
+              }
+          ?>
+
     </div>
   </div>
