@@ -299,6 +299,40 @@ input[type="submit"] {
   color: #C72D24 !important;
 }
 
+/* About */
+
+.myheader {
+  font-family: Didot;
+  color: #C72D24;
+  font-size: 45px;
+  text-align: left;
+  padding-bottom: 30px;
+}
+
+.p-bold {
+  font-weight: bold;
+}
+
+.p-margin {
+  margin-bottom: 40px;
+}
+
+.label {
+  color: #ffffff;
+  padding: 8px;
+  font-family: Arial;
+  border-radius: 18px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+
+}
+
+.success {
+  background-color: #ab945b;
+}
+
 /* footer */
 
 .footerTables {

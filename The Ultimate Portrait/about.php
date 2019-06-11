@@ -13,7 +13,7 @@ Template Name: About
       'menu_class' => 'navigation'
     )
   ); ?>
-  
+
 </div>
 <div class="container-fluid home">
   <div class="row" style="height: 100vh;">
@@ -42,7 +42,7 @@ Template Name: About
         <?php endif; ?>
             </div>
 
-          
+
 
         </div>
     </div>
@@ -51,13 +51,17 @@ Template Name: About
 
 
 
-<h2 style="text-transform: uppercase; font-size: 3em;"><?php the_field('head_text'); ?></h2>
+<h2 class="myheader" style="text-transform: uppercase; font-size: 3em;"><?php the_field('head_text'); ?></h2>
 
-    <strong><?php the_field('bold_text'); ?></strong>
-  
-    <p>“<?php the_field('quoted_text'); ?>”<p>
+    <div class="p-bold"><p><?php the_field('bold_text'); ?></p></div>
 
-   <p><?php the_field('normal_text'); ?></p>
+    <div class="p-margin"><p>“<?php the_field('quoted_text'); ?>”<p>
+
+   <p><?php the_field('normal_text'); ?></p></div>
+
+   <span class="label success">Artist</span>
+       <span class="label success">Exclusive</span>
+       <span class="label success">Portrait</span>
 
 </div>
     </div>
