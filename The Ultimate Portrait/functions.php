@@ -66,6 +66,7 @@ function load_slider(){
 
     wp_register_script('slick', get_template_directory_uri() . '/js/slick.min.js', '', 1, true);
     wp_enqueue_script('slick');
+  } else {
   }
 }
 add_action('wp_enqueue_scripts', 'load_slider');
