@@ -35,6 +35,9 @@ function load_stylesheets(){
 
   wp_register_style('portraits_style', get_template_directory_uri() . '/portraits.css', array(), false, 'all');
   wp_enqueue_style('portraits_style');
+
+  wp_register_style('single_portrait_style', get_template_directory_uri() . '/single-portrait.css', array(), false, 'all');
+  wp_enqueue_style('single_portrait_style');
 }
 add_action('wp_enqueue_scripts', 'load_stylesheets');
 
