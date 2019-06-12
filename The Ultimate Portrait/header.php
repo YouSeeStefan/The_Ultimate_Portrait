@@ -75,7 +75,7 @@ $linkBase = get_template_directory_uri();
             mail($to,$subject,$message);
             // alert("U word zo snel mogelijk gebeld!");
             // echo "Mail Sent. Thank you ";
-            header('Location: thanks');
+            header('Location: ../thanks');
             }
         ?>
 
