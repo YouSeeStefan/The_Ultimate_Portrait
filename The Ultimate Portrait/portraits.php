@@ -46,8 +46,8 @@
             <h2><?php the_field('title'); ?></h2>
             <span class="portraitInfo"><?php the_field('dimension'); ?></span>
             <span class="portraitInfo"><?php the_field('year'); ?></span>
-            <p class="textBig"><?php echo $textBig . "...";?><br><a href="<?php echo $singlePageLink; ?>">Read more</a></p>
-            <p class="textMedium"><?php echo $textMedium . "..." ?><br><a href="<?php echo $singlePageLink; ?>"> Read more</a></p>
+            <p class="textBig"><?php echo $textBig . "...";?><br><a href="<?php echo $singlePageLink; ?>" class="readmore">Read more</a></p>
+            <p class="textMedium"><?php echo $textMedium . "..." ?><br><a href="<?php echo $singlePageLink; ?>" class="readmore"> Read more</a></p>
         <a href="<?php echo $singlePageLink; ?>" class="portraitsGoToButton"><span class="goToPortrait">Go to the portrait</span><span class="viewPortrait">View portrait</span><span class="goToArrow"><?php
         
         $linkStart = get_template_directory_uri();
