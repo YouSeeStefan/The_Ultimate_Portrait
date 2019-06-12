@@ -6,16 +6,13 @@ Description:  The ultimate portrait theme, gemaakt voor Daniel Jeremy als examen
 Author URI:   http://frankvelde.nl
 Version:      1.1
  */
-* {
-    transition: 0.3s ease-in-out;
-}
 
+/* * {
+    transition: 0.3s ease-in-out;
+} */
 
 li a .wp-not-current-submenu.menu-top.menu-icon-tools.menu-top-last {
   display: none !important;
-}
-* {
-    
 }
 
 @font-face {
