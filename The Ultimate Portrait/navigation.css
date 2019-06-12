@@ -100,8 +100,8 @@ Author: Stefan Stekelenburg, Frank van der Velde
 
 .sidenav .closebtn {
     position: absolute;
-    top: 0px;
-    right: 21px;
+    top: 11px;
+    right: 34px;
     font-size: 48px;
     margin: 0;
     color: #AB945B;
@@ -166,6 +166,10 @@ div.navIcon {
         position: fixed;
         z-index: 3;
     }
+    .sidenav .closebtn {
+        top: 0px;
+        right: 22px;
+    }
 
     .responsiveNavText {
         display: initial;
@@ -203,7 +207,7 @@ div.navIcon {
             background-image: url(contact-icon.svg);
             background-position: center;
             background-repeat: no-repeat;
-            z-index: 1000;
+            z-index: 3;
             cursor: pointer;
             transition: 0.3s ease-in-out;
         }
