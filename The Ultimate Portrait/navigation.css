@@ -30,11 +30,11 @@ Author: Stefan Stekelenburg, Frank van der Velde
   }
 
 .sign {
-max-width: 170px;
-position: absolute;
-bottom: -70px;
-margin-left: 10px;
-transform: translate(-50%, -50%);
+    max-width: 170px;
+    position: absolute;
+    bottom: -70px;
+    margin-left: 10px;
+    transform: translate(-50%, -50%);
 }
 
 .menu-nav-container {
@@ -119,8 +119,9 @@ div.navIcon {
     font-size: 33px;
     cursor: pointer;
     position: fixed;
-    z-index: 1;
-    right: 15px;
+    z-index: 3;
+    right: 31px;
+    top: 9px;
     color: #AB945B !important;
     display: none;
     margin: 24px 7px 0 0;
@@ -130,10 +131,21 @@ div.navIcon {
     -o-transform: scale(1.1, 0.9);
     transform: scale(1.1, 0.9);
 }
+.nav-blok {
+    height: 55px;
+    width: 55px;
+    background-color: #C72D24; 
+    right: 23px;
+    top: 23px;
+    position: fixed;
+    z-index: 2;
+    cursor: pointer;
+    border-radius: 6px;
+}
 
 .responsiveNavText {
     display: none;
-    font-size: 33px;
+    font-size: 25px;
     position: fixed;
     color: white;
     vertical-align: middle;
@@ -166,9 +178,12 @@ div.navIcon {
         position: fixed;
         z-index: 3;
     }
-
     .responsiveNavText {
         display: initial;
+    }
+    .responsiveMenuIcon {
+        top: -2px;
+        right: 20px;
     }
 }
 
@@ -196,16 +211,20 @@ div.navIcon {
             width: 55px;
             position: fixed;
             background-color: #000D29;
-            /* right: 31px; */
             right: 302px;
             bottom: 31px;
+            background-size: 55%;
             border-radius: 6px;
             background-image: url(contact-icon.svg);
             background-position: center;
             background-repeat: no-repeat;
             z-index: 1000;
             cursor: pointer;
+            transition: 0.3s ease-in-out;
         }
+#contact-button:hover {
+    background-size: 65%;
+}
         #contact-popup {
             width: 362px;
             height: 388px;
@@ -263,17 +282,6 @@ div.navIcon {
             background-repeat: no-repeat;
             background-position: center right;
         }
-        .submit-button-contact {
-            float: left;
-            width: 35px;
-            margin-left: 16px;
-            height: 46px;
-            background-color: transparent;
-            border: none;
-            background-image: url(img/arrow-right-solid.svg);
-            background-repeat: no-repeat;
-            background-position: center right;
-        }
         .kruisje {
             height: 14px;
             width: 14px;
@@ -314,7 +322,7 @@ div.navIcon {
 @media screen and (max-width: 768px) and (min-width: 0px) {
    #contact-button {
      top: 13px;
-        right: 50px;
+        right: 60px;
         background-color: transparent;
         box-shadow: none;
         bottom: 0px;

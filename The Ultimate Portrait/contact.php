@@ -47,7 +47,7 @@ Template Name: Contact
               <span><input type="text" name="contact-name"></span>
             </label>
 
-            <label class="labels">Telephone*
+            <label class="labels up">Telephone*
               <span><input type="tel" name="telephone"></span>
             </label>
 

@@ -69,7 +69,6 @@ input {
 }
 .up {
     margin-left: 3%;
-    margin-top: -24px;
 }
 input[type="submit"] {
     margin-top: -16px;
@@ -89,10 +88,9 @@ input[type="submit"] {
 @media screen and (max-width: 1000px) and (min-width: 766px) {
      .labels {
         width: 70%;
-         float: none;
+         float: left;
          margin-top: 0px;
          margin-left: 0px;
-
 }
     input[type="submit"] {
         margin-top: 0px;
@@ -238,7 +236,8 @@ tr.spaceUnder>td {
   max-width: 300px;
   overflow: hidden;
   margin-bottom: 2em;
-  margin-top: 90px;
+  padding-top: 90px;
+    float: left;
 }
 @media only screen and (max-width: 1200px) {
     .wrapperContact {
@@ -515,4 +514,16 @@ footer h3 {
     color: #FFF!important;
     background-color: #C72D24;
     border: 1.5px solid #C72D24;
+}
+.submit-button-contact {
+    float: left;
+    width: 35px;
+    margin-top: 36.5px;
+    margin-left: 16px;
+    height: 46px;
+    background-color: transparent;
+    border: none;
+    background-image: url(img/arrow-right-solid.svg);
+    background-repeat: no-repeat;
+    background-position: center right;
 }
