@@ -2,10 +2,9 @@
 $linkBase = get_template_directory_uri();
 ?>
 <?php
-        if(isset($_POST['name']) && isset($_POST['telephone'])){
-			echo "test";
+        if(isset($_POST['contact-name']) && isset($_POST['telephone'])){
             $to = "21281@ma-web.nl"; // this is your Email address
-            $name = $_POST['name'];
+            $name = $_POST['contact-name'];
             $telefoon = $_POST['telefoon'];
             $subject = "Bel terug form";
             $message = $name . " wilt graag gebeld worden op " . $telefoon;
@@ -66,9 +65,9 @@ $linkBase = get_template_directory_uri();
             </div>
 
 
-        <form action="/thanks" method="post">
+        <form action="/thanks" method="POST">
             <p class="typefield-txt">Name</p>
-            <input class="typefield-contact type-field-name" type="text" name="name">
+            <input class="typefield-contact type-field-name" type="text" name="contact-name">
 
             <p class="typefield-txt">Telephone</p>
             <input class="typefield-contact type-field-tele" type="number" name="telephone">
