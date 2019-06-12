@@ -63,6 +63,12 @@ a:hover {
   width: 100%;
 }
 
+.thanksImg {
+  max-width: 721px;
+  max-height: 828px;
+  width: 100%;
+}
+
 .contactPage {
   margin: 50px;
   margin-left: 100px !important;
