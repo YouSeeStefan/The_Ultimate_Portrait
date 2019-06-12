@@ -51,7 +51,11 @@ $linkBase = get_template_directory_uri();
 
   <div class="navButtonDiv">
     <span class="responsiveNavText">Daniel Jeremy</span>
-    <span class="responsiveMenuIcon" id="responsiveMenuIconBars" onclick="openNav()">&#9776;</span>
+    <span class="responsiveMenuIcon" id="responsiveMenuIconBars" onclick="openNav()">
+      <div class='navIcon'></div>
+      <div class='navIcon'></div>
+      <div class='navIcon'></div>
+    </span>
     <div id="contact-button"></div>
 
     <div id="contact-popup">
