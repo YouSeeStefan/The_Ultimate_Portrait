@@ -1,6 +1,17 @@
 <?php
 $linkBase = get_template_directory_uri();
 ?>
+<?php
+        if(isset($_POST['contact-name']) && isset($_POST['telephone'])){
+            $to = "naadartworks@yahoo.com"; // this is your Email address
+            $name = $_POST['contact-name'];
+            $telefoon = $_POST['telephone'];
+            $subject = "Bel terug form";
+            $message = $name . " wilt graag gebeld worden op " . $telefoon;
+
+            mail($to,$subject,$message);
+            }
+        ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
@@ -54,30 +65,17 @@ $linkBase = get_template_directory_uri();
             </div>
 
 
-        <form action="">
+        <form action="/thanks" method="POST">
             <p class="typefield-txt">Name</p>
-            <input class="typefield-contact type-field-name" type="text" name="name">
+            <input class="typefield-contact type-field-name" type="text" name="contact-name">
 
             <p class="typefield-txt">Telephone</p>
-            <input class="typefield-contact type-field-tele" type="number" name="Telephone">
+            <input class="typefield-contact type-field-tele" type="number" name="telephone">
 
             <button type="submit" class="submit-button"></button>
 
         </form>
-        <?php
-        if(isset($_POST['submit'])){
-            $to = "21281@ma-web.nl"; // this is your Email address
-            $name = $_POST['name'];
-            $telefoon = $_POST['telefoon'];
-            $subject = "Form submission";
-            $message = $name . " wilt graag gebeld worden op " . $telefoon;
 
-            mail($to,$subject,$message);
-            // alert("U word zo snel mogelijk gebeld!");
-            // echo "Mail Sent. Thank you ";
-            header('Location: ../thanks');
-            }
-        ?>
 
     </div>
   </div>
