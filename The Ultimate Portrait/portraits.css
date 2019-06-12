@@ -70,7 +70,7 @@ Author: Stefan Stekelenburg, Frank van der Velde
     padding: 5px 18px;
     /* margin-right: 1em; */
     display: inline-block;
-    margin-bottom: 0.5em;
+    margin-bottom: 20px;
 }
 
 .resultsImageDiv {
@@ -334,3 +334,10 @@ Author: Stefan Stekelenburg, Frank van der Velde
         margin-right: 1em;
     }
   }
+.readmore {
+    color: #C72D24;
+    font-weight: 400;
+}
+.readmore:hover {
+    color: #000D29;
+}
