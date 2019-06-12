@@ -119,9 +119,8 @@ div.navIcon {
     font-size: 33px;
     cursor: pointer;
     position: fixed;
-    z-index: 3;
-    right: 31px;
-    top: 9px;
+    z-index: 1;
+    right: 15px;
     color: #AB945B !important;
     display: none;
     margin: 24px 7px 0 0;
@@ -131,21 +130,10 @@ div.navIcon {
     -o-transform: scale(1.1, 0.9);
     transform: scale(1.1, 0.9);
 }
-.nav-blok {
-    height: 55px;
-    width: 55px;
-    background-color: #C72D24; 
-    right: 23px;
-    top: 23px;
-    position: fixed;
-    z-index: 2;
-    cursor: pointer;
-    border-radius: 6px;
-}
 
 .responsiveNavText {
     display: none;
-    font-size: 25px;
+    font-size: 33px;
     position: fixed;
     color: white;
     vertical-align: middle;
@@ -181,10 +169,6 @@ div.navIcon {
 
     .responsiveNavText {
         display: initial;
-    }
-    .responsiveMenuIcon {
-        top: -2px;
-        right: 20px;
     }
 }
 
@@ -323,7 +307,7 @@ div.navIcon {
 @media screen and (max-width: 768px) and (min-width: 0px) {
    #contact-button {
      top: 13px;
-        right: 60px;
+        right: 50px;
         background-color: transparent;
         box-shadow: none;
         bottom: 0px;
