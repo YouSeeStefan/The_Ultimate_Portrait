@@ -35,6 +35,7 @@ Author: Stefan Stekelenburg, Frank van der Velde
 
     .home_text {
         padding-bottom: 2em;
+        max-width: 92%;
     }
 
     .home_text h1 {

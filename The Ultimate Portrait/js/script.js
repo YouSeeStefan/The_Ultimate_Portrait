@@ -20,7 +20,7 @@ $(document).ready(function(){
         arrows: false,
         autoplay: true,
         dots: false,
-        autoplaySpeed: 4000,
+        autoplaySpeed: 3000,
         responsive: [
         {
           breakpoint: 1250,

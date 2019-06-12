@@ -115,7 +115,7 @@ Author: Stefan Stekelenburg, Frank van der Velde
     position: fixed;
     z-index: 1;
     right: 15px;
-    color: #AB945B;
+    color: #AB945B !important;
     display: none;
     margin: 15px 7px 0 0;
     -webkit-transform: scale(1.1, 0.9);
