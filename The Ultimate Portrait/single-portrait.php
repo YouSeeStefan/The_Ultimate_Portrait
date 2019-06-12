@@ -45,9 +45,23 @@
               // }
  endforeach; 
   echo $content;
-        endif; ?>
-        <a class="previousPortrait"><?php  previous_post_link('%link'); ?>'s portrait</a>
-        <a class="nextPortrait"><?php next_post_link('%link'); ?>'s portrait</a>
+        endif; 
+
+    $prev = get_adjacent_post(false, '', true);
+    $next = get_adjacent_post(false, '', false);
+
+    //use an if to check if anything was returned and if it has, display a link
+    if($prev){
+        $url = get_permalink($prev->ID);            
+        echo '<a href="' . $url . '" title="' . $prev->post_title . '" class="portraitPreviousButton">' . $prev->post_title . "'s portrait" . '</a>';
+    }
+
+    if($next) {
+        $url = get_permalink($next->ID);            
+        echo '<a href="' . $url . '" title="' . $next->post_title . '" class="portraitNextButton">'. $next->post_title . "'s portrait" . '</a>';
+    } 
+?>
+
         
         </div>
           </div>
