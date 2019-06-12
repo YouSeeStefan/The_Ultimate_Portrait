@@ -8,7 +8,7 @@ Template Name: About
 <div class="container-fluid">
   <div class="row flex-nowrap">
     <div class="col-md col-12">
-   
+
     <div class="row" style="height: 100vh;">
     <div class="col-md-6 align-self-center">
         <div class="container testimonials-container paddingImg">
@@ -51,10 +51,6 @@ Template Name: About
     <div class="p-margin"><p>“<?php the_field('quoted_text'); ?>”<p>
 
    <p><?php the_field('normal_text'); ?></p></div>
-
-   <span class="label success">Artist</span>
-   <span class="label success">Exclusive</span>
-   <span class="label success">Portrait</span>
 
 </div>
     </div>
