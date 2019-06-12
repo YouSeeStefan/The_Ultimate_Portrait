@@ -121,7 +121,7 @@ echo $content;
         endif; ?>
         <span><?php echo get_next_posts_link( $label, $max_page ); ?>  </span>
         <span><?php echo get_next_posts_link( $label, $max_page ); ?>  </span>
-        ?>
+      
         </div>
       </div>
     </div>
