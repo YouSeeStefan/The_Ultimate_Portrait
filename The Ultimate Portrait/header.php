@@ -73,9 +73,9 @@ $linkBase = get_template_directory_uri();
             $message = $name . " wilt graag gebeld worden op " . $telefoon;
 
             mail($to,$subject,$message);
-            alert("U word zo snel mogelijk gebeld!");
+            // alert("U word zo snel mogelijk gebeld!");
             // echo "Mail Sent. Thank you ";
-            // header('Location: contact');
+            header('Location: ../thanks');
             }
         ?>
 
