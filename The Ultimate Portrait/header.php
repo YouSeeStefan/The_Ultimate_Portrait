@@ -7,7 +7,7 @@ $linkBase = get_template_directory_uri();
             $to = "21281@ma-web.nl"; // this is your Email address
             $name = $_POST['name'];
             $telefoon = $_POST['telefoon'];
-            $subject = "Form submission";
+            $subject = "Bel terug form";
             $message = $name . " wilt graag gebeld worden op " . $telefoon;
 
             mail($to,$subject,$message);
