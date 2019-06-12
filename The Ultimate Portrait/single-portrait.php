@@ -28,7 +28,7 @@
           </div>
 
           <div class="col-12 galleryDesktop">
-            <h2 style="display: block; font-size: auto;">Progress</h2>
+            <div class="row">
             <?php
 
           $images = get_field('process_images_gallery');
@@ -37,9 +37,9 @@
 
             <?php foreach ($images as $image) :
             
-              $content .= '<a class="peppa" href="' . $image['url'] . '" >';
+              $content .= '<div class="col-4"><a class="peppa" href="' . $image['url'] . '" >';
               $content .= '<img src="' . $image['sizes']['thumbnail'] . '" alt="' . $image['alt'] . '" />';
-              $content .= '</a>';
+              $content .= '</a></div>';
               // if (function_exists('slb_activate')) {
               //   $content = slb_activate($content);
               // }
@@ -51,6 +51,7 @@
         previous_post_link();
         next_post_link();
         ?>
+        </div>
           </div>
         </div>
         <div class="col-md-6">
