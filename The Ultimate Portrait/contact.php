@@ -6,19 +6,11 @@ Template Name: Contact
 
 
 <?php get_header(); ?>
-<div class="bigScreenNav" style="padding: 0;">
-
-  <?php wp_nav_menu(
-    array(
-      'theme_location' => 'top-menu',
-      'menu_class' => 'navigation'
-    )
-  ); ?>
-
-</div>
-<div class="container-fluid home">
-
-  <div class="row" style="height: 100vh;">
+<div class="container-fluid">
+  <div class="row flex-nowrap">
+    <div class="col-md col-12">
+   
+    <div class="row" style="height: 100vh;">
     <div class="col-md-6 align-self-center">
 
       <div class="stopM">
@@ -34,12 +26,12 @@ Template Name: Contact
 
         <h1><?php the_title(); ?></h1><br>
 
-        <p><b>Telephone </b><?php the_field('telephone') ?></p>
-        <p><b>Email </b><?php the_field('email') ?></p>
+        <p><b>TELEPHONE </b><?php the_field('telephone') ?></p>
+        <p><b>EMAIL </b><?php the_field('email') ?></p>
         <p style="color:#ab945b"><b>KVK </b><?php the_field('kvk') ?></p>
         <p style="color:#ab945b"><b>IBAN </b><?php the_field('iban') ?></p><br>
 
-        <h1 class="font colorC">I AM INTERESTED CALL ME</h1>
+        <h1 class="font colorC">I WANT THE ULTIMATE PORTRAIT</h1>
         <?php echo do_shortcode("[contact-form-7 id='118' title='ContactForm']"); ?>
 
         <br>
@@ -50,6 +42,18 @@ Template Name: Contact
         </div>
       </div>
     </div>
+  </div>
+    </div>
+    <div class="col-md-3 col-12 bigScreenNav sticky" style="padding: 0;">
+
+<?php wp_nav_menu(
+  array(
+    'theme_location' => 'top-menu',
+    'menu_class' => 'navigation'
+  )
+); ?>
+
+</div>
   </div>
 </div>
   <?php get_footer(); ?>

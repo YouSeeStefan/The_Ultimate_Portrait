@@ -41,7 +41,7 @@ Author: Stefan Stekelenburg, Frank van der Velde
 }
 
 .results_text p {
-    font-size: 1.5vw; 
+    font-size: 1.5vw;
 }
 
 .result_text {
@@ -60,7 +60,7 @@ Author: Stefan Stekelenburg, Frank van der Velde
 .pageLinkImage {
     float: left;
     display: inline-block;
-    
+
 }
 
 .portraitInfo {
@@ -81,7 +81,7 @@ Author: Stefan Stekelenburg, Frank van der Velde
 }
 
 .resultsTextDiv {
-    display: inline-block; 
+    display: inline-block;
     max-width: 45%;
 }
 
@@ -103,14 +103,15 @@ Author: Stefan Stekelenburg, Frank van der Velde
 }
 
 .goToArrow {
-    
+
 }
 
 .portraitsTitle {
     /* text-align: center;
     margin: 1em 0 1em -15em */
     /* margin: 1em 0% 1em 14.5%; */
-    margin: 0.6em 0 .6em 14%;
+    /* margin: 0.6em 0 .6em 14%; */
+    margin: 0.6em 0 .6em 9.1%;
 }
 
 .imgContain {
@@ -130,7 +131,7 @@ Author: Stefan Stekelenburg, Frank van der Velde
 @media only screen and (max-width: 1430px) {
     .results_text p {
         font-size: 1.5vw;
-        
+
     }
 
     .result_text {
@@ -268,12 +269,12 @@ Author: Stefan Stekelenburg, Frank van der Velde
 
   }
 
-  
 
 
-  
-  
-  
+
+
+
+
 
 
 @media only screen and (max-width: 1060px) {

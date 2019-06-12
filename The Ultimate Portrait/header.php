@@ -56,14 +56,28 @@ $linkBase = get_template_directory_uri();
 
         <form action="">
             <p class="typefield-txt">Name</p>
-            <input class="typefield-contact type-field-name" type="text" name="Name">
+            <input class="typefield-contact type-field-name" type="text" name="name">
 
             <p class="typefield-txt">Telephone</p>
-            <input class="typefield-contact type-field-tele" type="text" name="Telephone">
+            <input class="typefield-contact type-field-tele" type="number" name="Telephone">
 
             <button type="submit" class="submit-button"></button>
 
         </form>
+        <?php
+        if(isset($_POST['submit'])){
+            $to = "21281@ma-web.nl"; // this is your Email address
+            $name = $_POST['name'];
+            $telefoon = $_POST['telefoon'];
+            $subject = "Form submission";
+            $message = $name . " wilt graag gebeld worden op " . $telefoon;
+
+            mail($to,$subject,$message);
+            // alert("U word zo snel mogelijk gebeld!");
+            // echo "Mail Sent. Thank you ";
+            header('Location: ../thanks');
+            }
+        ?>
 
     </div>
   </div>
