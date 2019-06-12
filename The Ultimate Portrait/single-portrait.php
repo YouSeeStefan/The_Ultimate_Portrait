@@ -42,11 +42,12 @@
               $content .= '</a></div>';
               // if (function_exists('slb_activate')) {
               //   $content = slb_activate($content);
-              // }
+             // }
  endforeach; 
   echo $content;
-        endif; 
-
+        endif; ?>
+                <div class="col">
+                <?php
     $prev = get_adjacent_post(false, '', true);
     $next = get_adjacent_post(false, '', false);
 
@@ -61,6 +62,7 @@
         echo '<a href="' . $url . '" title="' . $next->post_title . '" class="portraitNextButton">'. $next->post_title . "'s portrait" . '</a>';
     } 
 ?>
+              </div>
 
         
         </div>
@@ -140,19 +142,4 @@ echo $content;
     </div>
   </div>
 </div>
-<style>
-  .galleryMobile {
-    display: none;
-  }
-
-  @media only screen and (max-width: 768px) {
-    .galleryDesktop {
-      display: none;
-    }
-
-    .galleryMobile {
-      display: initial;
-    }
-  }
-</style>
 <?php get_footer(); ?>

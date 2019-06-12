@@ -22,3 +22,33 @@
       display: initial;
     }
   }
+.portraitPreviousButton {
+    font-size: 20px;
+    font-weight: 600;
+    float: left;
+    height: 27px;
+    line-height: 27px;
+    padding-left: 58px;
+    color: #C72D24;
+    background-image: url(arrow-red-links.svg);
+    background-size: auto 27px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.portraitNextButton {
+    font-size: 20px;
+    font-weight: 600;
+    float: right;
+    height: 27px;
+    line-height: 27px;
+    padding-right: 58px;
+    color: #C72D24;
+    background-image: url(arrow-red-rechts.svg);
+    background-size: auto 27px;
+    background-repeat: no-repeat;
+    background-position: right center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}

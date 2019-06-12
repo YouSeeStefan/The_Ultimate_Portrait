@@ -55,4 +55,10 @@ Author: Stefan Stekelenburg, Frank van der Velde
     background-color: white;
     font-weight: 700;
     text-transform: uppercase;
+    transition: 0.3s ease-in-out;
+}
+.homePortraitButton:hover {
+    color: #FFF;
+    background-color: #C72D24;
+    border: 1.5px solid #C72D24;
 }

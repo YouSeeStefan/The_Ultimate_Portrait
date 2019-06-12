@@ -7,8 +7,13 @@ Author URI:   http://frankvelde.nl
 Version:      1.1
  */
 
+
+
 li a .wp-not-current-submenu.menu-top.menu-icon-tools.menu-top-last {
   display: none !important;
+}
+* {
+    
 }
 
 @font-face {
@@ -40,7 +45,7 @@ h6 {
 
 a:hover {
   color: #C72D24;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .stopImg {

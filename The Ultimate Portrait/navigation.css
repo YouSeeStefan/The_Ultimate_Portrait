@@ -196,16 +196,20 @@ div.navIcon {
             width: 55px;
             position: fixed;
             background-color: #000D29;
-            /* right: 31px; */
             right: 302px;
             bottom: 31px;
+            background-size: 55%;
             border-radius: 6px;
             background-image: url(contact-icon.svg);
             background-position: center;
             background-repeat: no-repeat;
             z-index: 1000;
             cursor: pointer;
+            transition: 0.3s ease-in-out;
         }
+#contact-button:hover {
+    background-size: 65%;
+}
         #contact-popup {
             width: 362px;
             height: 388px;
