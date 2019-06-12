@@ -14,8 +14,18 @@ Template Name: Process
           <div class="stopM">
 
             <h1><?php the_title(); ?></h1>
-            <img class="stopImg" src="<?php $linkBase = get_template_directory_uri();
-                                      echo $linkBase ?>/img/img.jpg" alt="">
+            
+                  <?php
+
+                  $stopmotion = get_field('stopmotion_process');
+                  ?>
+                  <a class="peppa" href="<?php echo $image['url'] ?>" target="_blank">
+                    <video width="100%" height="auto" autoplay loop>
+                      <source src="<?php echo $stopmotion['url']; ?>" type="video/mp4">
+
+                    </video>
+                  </a>
+
 
           </div>
 

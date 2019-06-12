@@ -20,52 +20,52 @@
 
             if (!empty($image)) : ?>
 
-              <a class="peppa" href="<?php echo $image['url'] ?>">   
+              <a class="peppa" href="<?php echo $image['url'] ?>">
                 <img src="<?php echo $thumb; ?>" alt="<?php echo $image['alt']; ?>" style="width: 100%;" />
-</a>
+              </a>
 
             <?php endif; ?>
           </div>
 
           <div class="col-12 galleryDesktop">
             <div class="row">
-            <?php
+              <?php
 
-          $images = get_field('process_images_gallery');
+              $images = get_field('process_images_gallery');
 
-          if ($images) : ?>
+              if ($images) : ?>
 
-            <?php foreach ($images as $image) :
-            
-              $content .= '<div class="col-4"><a class="process-img" href="' . $image['url'] . '" >';
-              $content .= '<img src="' . $image['sizes']['thumbnail'] . '" alt="' . $image['alt'] . '" />';
-              $content .= '</a></div>';
-              // if (function_exists('slb_activate')) {
-              //   $content = slb_activate($content);
-             // }
- endforeach; 
-  echo $content;
-        endif; ?>
-                <div class="col">
+                <?php foreach ($images as $image) :
+
+                  $content .= '<div class="col-4"><a class="process-img" href="' . $image['url'] . '" >';
+                  $content .= '<img src="' . $image['sizes']['thumbnail'] . '" alt="' . $image['alt'] . '" />';
+                  $content .= '</a></div>';
+                // if (function_exists('slb_activate')) {
+                //   $content = slb_activate($content);
+                // }
+                endforeach;
+                echo $content;
+              endif; ?>
+              <div class="col">
                 <?php
-    $prev = get_adjacent_post(false, '', true);
-    $next = get_adjacent_post(false, '', false);
+                $prev = get_adjacent_post(false, '', true);
+                $next = get_adjacent_post(false, '', false);
 
-    //use an if to check if anything was returned and if it has, display a link
-    if($prev){
-        $url = get_permalink($prev->ID);            
-        echo '<a href="' . $url . '" title="' . $prev->post_title . '" class="portraitPreviousButton">' . $prev->post_title . "'s portrait" . '</a>';
-    }
+                //use an if to check if anything was returned and if it has, display a link
+                if ($prev) {
+                  $url = get_permalink($prev->ID);
+                  echo '<a href="' . $url . '" title="' . $prev->post_title . '" class="portraitPreviousButton">' . $prev->post_title . "'s portrait" . '</a>';
+                }
 
-    if($next) {
-        $url = get_permalink($next->ID);            
-        echo '<a href="' . $url . '" title="' . $next->post_title . '" class="portraitNextButton">'. $next->post_title . "'s portrait" . '</a>';
-    } 
-?>
+                if ($next) {
+                  $url = get_permalink($next->ID);
+                  echo '<a href="' . $url . '" title="' . $next->post_title . '" class="portraitNextButton">' . $next->post_title . "'s portrait" . '</a>';
+                }
+                ?>
               </div>
 
-        
-        </div>
+
+            </div>
           </div>
         </div>
         <div class="col-md-6">
@@ -76,32 +76,34 @@
                 <span class="portraitInfo"><?php the_field('dimension'); ?></span>
                 <span class="portraitInfo"><?php the_field('year'); ?></span>
                 <p><?php the_field('description'); ?></p>
-                
-                  
-                  <a class="gotoprocessButton">Read more about process</a>
+
+
+                <a class="gotoprocessButton">Read more about process</a>
 
               </div>
             </div>
           </div>
           <div class="col-12">
-            <div class="col-12  text-center">
-            <div class="home_text">
-            <?php
+            <div class="row">
+              <div class="col-12  text-center">
+                <div class="home_text">
+                  <?php
 
-            $image = get_field('stopmotion');
+                  $image = get_field('stopmotion');
 
-            ?>
-<a class="peppa" href="<?php echo $image['url'] ?>" target="_blank">
-<video width="100%" height="auto" autoplay loop>
-  <source src="<?php echo $image['url']; ?>" type="video/mp4">
+                  ?>
+                  <a class="peppa" href="<?php echo $image['url'] ?>" target="_blank">
+                    <video width="100%" height="auto" autoplay loop>
+                      <source src="<?php echo $image['url']; ?>" type="video/mp4">
 
-</video>
-</a>
+                    </video>
+                  </a>
 
-            <?php  ?>
-
+                </div>
+              </div>
+            </div>
           </div>
-              </div></div></div>
+        </div>
 
 
 
@@ -114,19 +116,19 @@
           if ($images) : ?>
 
             <?php foreach ($images as $image) :
-            
+
               $content .= '<a class="" href="' . $image['url'] . '">';
               $content .= '<img src="' . $image['sizes']['thumbnail'] . '" alt="' . $image['alt'] . '" />';
               $content .= '</a>';
-              // if (function_exists('slb_activate')) {
-              //   $content = slb_activate($content);
-              // }
- endforeach; 
-echo $content;
-        endif; ?>
-        <span><?php echo get_next_posts_link( $label, $max_page ); ?>  </span>
-        <span><?php echo get_next_posts_link( $label, $max_page ); ?>  </span>
-      
+            // if (function_exists('slb_activate')) {
+            //   $content = slb_activate($content);
+            // }
+            endforeach;
+            echo $content;
+          endif; ?>
+          <span><?php echo get_next_posts_link($label, $max_page); ?> </span>
+          <span><?php echo get_next_posts_link($label, $max_page); ?> </span>
+
         </div>
       </div>
     </div>
