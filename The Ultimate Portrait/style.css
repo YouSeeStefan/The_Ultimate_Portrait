@@ -50,7 +50,24 @@ a:hover {
 }
 
 .labels {
-  color: black !important;
+    color: black !important;
+    width: 40%;
+    float: left;
+    font-size: 20px;
+    font-weight: 300;
+}
+input {
+    height: 42px;
+    padding-left: 15px;
+    margin-top: 8px;
+}
+.up {
+    margin-left: 3%;
+    margin-top: -25px;
+}
+input[type="submit"] {
+    margin-top: -18px;
+    float: left;
 }
 
 .font {
@@ -151,6 +168,7 @@ tr.spaceUnder>td {
   max-width: 300px;
   overflow: hidden;
   margin-bottom: 2em;
+  margin-top: 90px;
 }
 
 .firstContact {
