@@ -26,8 +26,8 @@ Template Name: Thanks
 
                 <div class="p-margin">
                   <p>I will look over your message and get back to you.<br>In the meantime, you can check the protrait page for new portraits.<p>
-                    <br>  <a href="homepage">
-                      Go to the Home page
+                    <br>  <a href="../portraits">
+                      Go to the Portraits
                     </a>
                </div>
 
