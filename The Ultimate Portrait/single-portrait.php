@@ -43,14 +43,12 @@
               // if (function_exists('slb_activate')) {
               //   $content = slb_activate($content);
               // }
-
-             ?>
-            <?php endforeach; 
+ endforeach; 
   echo $content;
-        endif;
-        previous_post_link();
-        next_post_link();
-        ?>
+        endif; ?>
+        <a class="previousPortrait"><?php  previous_post_link('%link'); ?>'s portrait</a>
+        <a class="nextPortrait"><?php next_post_link('%link'); ?>'s portrait</a>
+        
         </div>
           </div>
         </div>
@@ -104,13 +102,11 @@
               // if (function_exists('slb_activate')) {
               //   $content = slb_activate($content);
               // }
-
-               ?>
-            <?php endforeach; 
+ endforeach; 
 echo $content;
-        endif;
-        previous_post_link();
-        next_post_link();
+        endif; ?>
+        <span><?php echo get_next_posts_link( $label, $max_page ); ?>  </span>
+        <span><?php echo get_next_posts_link( $label, $max_page ); ?>  </span>
         ?>
         </div>
       </div>
