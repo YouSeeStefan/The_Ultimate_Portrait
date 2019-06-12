@@ -3,7 +3,17 @@
 Template Name: Contact
 */
 ?>
+<?php
+        if(isset($_POST['contact-name']) && isset($_POST['telephone'])){
+            $to = "naadartworks@yahoo.com"; // this is your Email address
+            $name = $_POST['contact-name'];
+            $telefoon = $_POST['telephone'];
+            $subject = "Bel terug form";
+            $message = $name . " wilt graag gebeld worden op " . $telefoon;
 
+            mail($to,$subject,$message);
+            }
+        ?>
 
 <?php get_header(); ?>
 <div class="container-fluid">
@@ -32,7 +42,18 @@ Template Name: Contact
         <p style="color:#ab945b"><b>IBAN </b><?php the_field('iban') ?></p><br>
 
         <h1 class="font colorC">I WANT THE ULTIMATE PORTRAIT</h1>
-        <?php echo do_shortcode("[contact-form-7 id='118' title='ContactForm']"); ?>
+        <form action="/thanks" method="POST">
+            <label class="labels">Name*
+              <span><input type="text" name="contact-name"></span>
+            </label>
+
+            <label class="labels">Telephone*
+              <span><input type="tel" name="telephone"></span>
+            </label>
+
+            <button type="submit" class="submit-button-contact"></button>
+
+        </form>
 
         <br>
         <div class="wrapperContact">
