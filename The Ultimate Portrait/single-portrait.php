@@ -20,10 +20,8 @@
 
             if (!empty($image)) : ?>
 
-              <a class="peppa">
-                
+              <a class="peppa" href="<?php echo $image['url'] ?>">   
                 <img src="<?php echo $thumb; ?>" alt="<?php echo $image['alt']; ?>" style="width: 100%;" />
-
 </a>
 
             <?php endif; ?>
@@ -73,11 +71,12 @@
             $image = get_field('stopmotion');
 
             ?>
-
+<a class="peppa" href="<?php echo $image['url'] ?>" target="_blank">
 <video width="100%" height="auto" autoplay loop>
   <source src="<?php echo $image['url']; ?>" type="video/mp4">
 
 </video>
+</a>
 
             <?php  ?>
 
