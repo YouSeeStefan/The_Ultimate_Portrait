@@ -48,7 +48,7 @@ Author: Stefan Stekelenburg, Frank van der Velde
     margin-right: 5em;
 }
 
-.results_text a {
+.results_text .portraitsGoToButton {
     font-size: 2vw;
     bottom: 0;
     right: 0;
@@ -173,7 +173,7 @@ Author: Stefan Stekelenburg, Frank van der Velde
         font-size: 3.5em;
     }
 
-    .results_text a {
+    .results_text .portraitsGoToButton {
         font-size: 1.6em;
     }
 
@@ -217,7 +217,7 @@ Author: Stefan Stekelenburg, Frank van der Velde
         display: none;
     }
 
-    .results_text a {
+    .results_text .portraitsGoToButton {
         position: absolute;
         bottom: 0;
         left: 0;
@@ -241,11 +241,11 @@ Author: Stefan Stekelenburg, Frank van der Velde
   }
 
   @media only screen and (max-width: 600px) {
-    .results_text a {
+    .results_text .portraitsGoToButton {
         font-size: 1.3em;
     }
 
-    .results_text a {
+    .results_text .portraitsGoToButton {
         position: absolute;
         bottom: 0;
         left: initial;
