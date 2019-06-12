@@ -9,7 +9,7 @@ Template Name: Contact
 <div class="container-fluid">
   <div class="row flex-nowrap">
     <div class="col-md col-12">
-   
+
     <div class="row" style="height: 100vh;">
     <div class="col-md-6 align-self-center">
 
