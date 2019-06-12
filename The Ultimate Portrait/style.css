@@ -35,7 +35,7 @@ h6 {
 
 .stopM {
   margin: 50px;
-  margin-left: 100px !important;
+  /* margin-left: 100px !important; */
 }
 
 a:hover {
@@ -296,7 +296,6 @@ input[type="submit"] {
 
 .contact_text {
   margin: 50px;
-  margin-top: 125px;
 }
 
 .home_text h1 {
