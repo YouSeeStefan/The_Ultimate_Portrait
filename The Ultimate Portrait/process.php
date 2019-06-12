@@ -67,9 +67,9 @@ Template Name: Process
             </div>
 
             <h1 class="h1P"><span class="proccesIn">INTERESTED?</span></h1>
-            <a href="contact">
-              Get in touch
-            </a>
+        <a href="contact" class="homePortraitButton">
+          Contact Daniel
+        </a>
 
           </div>
         </div>
