@@ -72,11 +72,14 @@
 
             $image = get_field('stopmotion');
 
-            if (!empty($image)) : ?>
+            ?>
 
-              <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" style="width: 100%; border: 1px solid black;"/>
+<video width="100%" height="auto" autoplay loop>
+  <source src="<?php echo $image['url']; ?>" type="video/mp4">
 
-            <?php endif; ?>
+</video>
+
+            <?php  ?>
 
           </div>
         </div>
