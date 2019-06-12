@@ -1,0 +1,24 @@
+.galleryDesktop {
+    margin-top: 3%;
+}
+
+.galleryMobile {
+    display: none;
+  }
+.galleryDesktop img {
+    width: 100%;
+}
+
+
+
+
+
+  @media only screen and (max-width: 768px) {
+    .galleryDesktop {
+      display: none;
+    }
+
+    .galleryMobile {
+      display: initial;
+    }
+  }
