@@ -52,3 +52,19 @@
     margin-top: 50px;
     margin-bottom: 50px;
 }
+.gotoprocessButton {
+    font-size: 20px;
+    font-weight: 600;
+    text-align: left;
+    float: left!important;
+    height: 27px;
+    line-height: 27px;
+    padding-right: 58px;
+    color: #AB945B!important;
+    background-image: url(arrow-red-rechts-gold.svg);
+    background-size: auto 27px;
+    background-repeat: no-repeat;
+    background-position: right center;
+    margin-top: 5px;
+    margin-bottom: 38px;
+}
