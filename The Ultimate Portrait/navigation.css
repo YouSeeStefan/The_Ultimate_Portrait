@@ -30,11 +30,11 @@ Author: Stefan Stekelenburg, Frank van der Velde
   }
 
 .sign {
-    max-width: 170px;
-    position: absolute;
-    bottom: -70px;
-    margin-left: 10px;
-    transform: translate(-50%, -50%);
+max-width: 170px;
+position: absolute;
+bottom: -70px;
+margin-left: 10px;
+transform: translate(-50%, -50%);
 }
 
 .menu-nav-container {
