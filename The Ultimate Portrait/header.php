@@ -3,7 +3,7 @@ $linkBase = get_template_directory_uri();
 ?>
 <?php
         if(isset($_POST['contact-name']) && isset($_POST['telephone'])){
-            $to = "21281@ma-web.nl"; // this is your Email address
+            $to = "naadartworks@yahoo.com"; // this is your Email address
             $name = $_POST['contact-name'];
             $telefoon = $_POST['telephone'];
             $subject = "Bel terug form";
