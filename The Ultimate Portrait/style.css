@@ -63,11 +63,70 @@ input {
 }
 .up {
     margin-left: 3%;
-    margin-top: -25px;
+    margin-top: -24px;
 }
 input[type="submit"] {
-    margin-top: -18px;
+    margin-top: -16px;
     float: left;
+}
+
+@media screen and (max-width: 1240px) and (min-width: 1200px) {
+  .labels {
+    width: 30%;  
+}
+}
+@media screen and (max-width: 1200px) and (min-width: 1000px) {
+  .labels {
+    width: 40%;  
+}
+}
+@media screen and (max-width: 1000px) and (min-width: 766px) {
+     .labels {
+        width: 70%;
+         float: none;
+         margin-top: 0px;
+         margin-left: 0px;
+         
+}
+    input[type="submit"] {
+        margin-top: 0px;
+        transform: translateX(-12px);
+    }
+    .wrapperContact {
+        margin-left: 0px;
+        padding-top: 10px;
+        transform: translateX(-62px);
+    }
+}
+@media screen and (max-width: 980px) and (min-width: 766px) {
+    .wrapperContact {
+        margin-left: 0px;
+        padding-top: 10px;
+        transform: translateX(0px);
+    }
+}
+@media screen and (max-width: 766px) and (min-width: 0px) {
+     .labels {
+        width: 100%;
+         float: none;
+         margin-top: 0px;
+         margin-left: 0px;
+         
+}
+    input[type="submit"] {
+        margin-top: 0px;
+        transform: translateX(-12px);
+    }
+    .wrapperContact {
+        margin-left: 0px;
+        padding-top: 10px;
+        transform: translateX(-62px);
+    }
+}
+@media screen and (max-width: 766px) and (min-width: 0px) { 
+    .wrapperContact {
+    transform: translateX(-0px);
+    }
 }
 
 .font {
@@ -175,6 +234,11 @@ tr.spaceUnder>td {
   overflow: hidden;
   margin-bottom: 2em;
   margin-top: 90px;
+}
+@media only screen and (max-width: 1200px) {
+    .wrapperContact {
+        margin-top: 0px;
+    }
 }
 
 .firstContact {
