@@ -237,6 +237,9 @@ Author: Stefan Stekelenburg, Frank van der Velde
     .goToPortrait {
         display: none;
     }
+      .arrowright {
+          margin-right: 24px;
+      }
 
   }
 
