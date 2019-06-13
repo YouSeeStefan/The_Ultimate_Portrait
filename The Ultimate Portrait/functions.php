@@ -66,6 +66,9 @@ function load_slider(){
 
     wp_register_script('slick', get_template_directory_uri() . '/js/slick.min.js', '', 1, true);
     wp_enqueue_script('slick');
+
+    wp_register_script('slickStarter', get_template_directory_uri() . '/js/slickstarter.js', '', 1, true);
+    wp_enqueue_script('slickStarter');
   }
 }
 add_action('wp_enqueue_scripts', 'load_slider');
