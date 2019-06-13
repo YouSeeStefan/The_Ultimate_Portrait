@@ -30,7 +30,7 @@ Template Name: Process
           </div>
 
         </div>
-        <div class="col-md-6 align-self-center text-center">
+        <div class="col-md-5 align-self-center text-center">
           <div class="process_text">
 
             <?php $linkBase = get_template_directory_uri(); ?>
