@@ -427,10 +427,6 @@ div.navIcon {
         opacity: 1;
     }
 }
-@media only screen and (max-height: 750px) {
-    .navigation {
-        margin-top: -300px;
-    }
 }
 @media only screen and (max-width: 699px) {
     #logo {
