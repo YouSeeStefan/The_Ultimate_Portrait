@@ -57,9 +57,9 @@ Template Name: Contact
 
         <br>
         <div class="wrapperContact">
-            <div class="firstContact"> <a href="#"><img class="imgC" src="<?php echo $linkBase ?>/img/facebook.png" alt=""></a> </div>
-            <div class="secondContact"> <a href="#"><img class="imgC" src="<?php echo $linkBase ?>/img/instagram.png" alt=""></a> </div>
-            <div class="thirdContact"> <a href="#"><img class="imgC" src="<?php echo $linkBase ?>/img/linkedin.png" alt=""></a> </div>
+            <div class="firstContact"> <a href="https://www.facebook.com/DanielJeremydeJong"><img class="imgC" src="<?php echo $linkBase ?>/img/facebook.png" alt="facebook"></a> </div>
+            <div class="secondContact"> <a href="https://www.instagram.com/?hl=nl"><img class="imgC" src="<?php echo $linkBase ?>/img/instagram.png" alt="instagram"></a> </div>
+            <div class="thirdContact"> <a href="https://www.linkedin.com/in/daniel-jeremy-9453394/?originalSubdomain=nl"><img class="imgC" src="<?php echo $linkBase ?>/img/linkedin.png" alt="linked"></a> </div>
         </div>
       </div>
     </div>
