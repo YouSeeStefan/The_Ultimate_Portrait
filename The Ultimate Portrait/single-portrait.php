@@ -72,10 +72,10 @@
           <div class="col-12  text-center">
             <div class="home_text">
               <div class="resultsTextDiv" style="max-width: 100%;">
-                <h2 style="color: #C72D24;"><?php the_field('title'); ?></h2>
+                <h2 style="color: #C72D24; padding-top:20px;"><?php the_field('title'); ?></h2>
                 <span class="portraitInfo"><?php the_field('dimension'); ?></span>
                 <span class="portraitInfo"><?php the_field('year'); ?></span>
-                <p><?php the_field('description'); ?></p>
+                <p style="display: inline-block!important"><?php the_field('description'); ?></p>
 
 
                 <a href="<?php echo get_page_link(57); ?>" class="gotoprocessButton">Read more about process</a>
@@ -118,8 +118,8 @@
 
                 <?php foreach ($images as $image) :
 
-                  $content .= '<div class="col-4"><a class="process-img" href="' . $image['url'] . '" >';
-                  $content .= '<img src="' . $image['sizes']['thumbnail'] . '" alt="' . $image['alt'] . '" />';
+                  $content .= '<div class="col-md-4 cols-xs-12 txt-align"><a class="process-img" href="' . $image['url'] . '" >';
+                  $content .= '<img class="padding-bottom" src="' . $image['sizes']['thumbnail'] . '" alt="' . $image['alt'] . '" />';
                   $content .= '</a></div>';
                 // if (function_exists('slb_activate')) {
                 //   $content = slb_activate($content);

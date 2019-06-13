@@ -443,3 +443,12 @@ div.navIcon {
         bottom: 30px;
     }
 }
+.txt-align {
+    text-align: center;
+}
+.padding-bottom {
+    margin-bottom: 20px;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
