@@ -404,7 +404,7 @@ div.navIcon {
         width: 170px;
         position: fixed;
         bottom: 30px;
-        right: -100px;
+        right: -200px;
         z-index: 1000;
         background-image: url(img/handtekening.svg);
         background-size: contain;
@@ -429,14 +429,14 @@ div.navIcon {
 }
 @media only screen and (max-height: 750px) {
     .navigation {
-        margin-top: -200px;
+        margin-top: -300px;
     }
 }
 @media only screen and (max-width: 699px) {
     #logo {
         right:  0px!important;
         left: 0px!important;
-        bottom: -150px;
+        bottom: -250px;
         width: auto!important;
     }
     #logo.active {
