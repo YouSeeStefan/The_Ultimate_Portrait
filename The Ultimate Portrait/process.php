@@ -19,8 +19,8 @@ Template Name: Process
 
                   $stopmotion = get_field('stopmotion_process');
                   ?>
-                  <a class="peppa" href="<?php echo $image['url'] ?>" target="_blank">
-                    <video width="100%" height="auto" autoplay loop>
+                  <a href="<?php echo $image['url'] ?>" target="_blank">
+                    <video style="width: 100%; height:auto; max-height:80vh;" autoplay loop>
                       <source src="<?php echo $stopmotion['url']; ?>" type="video/mp4">
 
                     </video>
