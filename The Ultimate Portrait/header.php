@@ -28,13 +28,13 @@ $linkBase = get_template_directory_uri();
 
 <body id="body" <?php body_class(); ?>>
   <div id="mySidenav" class="sidenav">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="javascript:void(0)" class="closebtn" id="logo-no-show" onclick="closeNav()">&times;</a>
     <?php
 
     function add_last_nav_item($items)
     {
       $linkBase = get_template_directory_uri();
-      return $items .= '<li><img class="sign" src="'. $linkBase .'/img/handtekening.svg" alt="Daniel Jeremy logo"></li>';
+      return $items .= '<li><img style="display:none" class="sign" src="'. $linkBase .'/img/handtekening.svg" alt="Daniel Jeremy logo"></li>';
     }
     add_filter('wp_nav_menu_items', 'add_last_nav_item');
 
@@ -48,15 +48,17 @@ $linkBase = get_template_directory_uri();
 
 
   </div>
-
+    <div id="logo"></div>
   <div class="navButtonDiv">
     <span class="responsiveNavText">Daniel Jeremy</span>
+    <div id="logo-show">
       <div class="nav-blok" id="responsiveMenuIconBars" onclick="openNav()"></div>
-    <span class="responsiveMenuIcon" id="responsiveMenuIconBars" onclick="openNav()">
+    <span class="responsiveMenuIcon" onclick="openNav()">
         <div class='navIcon'></div>
         <div class='navIcon'></div>
         <div class='navIcon'></div>
     </span>
+    </div>
     <div id="contact-button"></div>
 
     <div id="contact-popup">

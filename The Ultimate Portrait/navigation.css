@@ -153,6 +153,8 @@ div.navIcon {
     font-weight: 600;
     margin-left: 25px;
     font-family: Didot !important;
+    position: relative;
+    z-index: 1000000;
 }
 
 
@@ -188,6 +190,10 @@ div.navIcon {
     .responsiveMenuIcon {
         top: -2px;
         right: 20px;
+    }
+    .sidenav .closebtn {
+    top: 0px;
+    right: 24px;
     }
 }
 
@@ -379,4 +385,61 @@ div.navIcon {
 .type-field-tele {
   width: 75%;
 }
+}
+#logo {
+    height: 158px;
+    width: 170px;
+    position: fixed;
+    bottom: 30px;
+    right: 40px;
+    z-index: 1000;
+    background-image: url(img/handtekening.svg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+@media only screen and (max-width: 1200px) {
+    #logo {
+        height: 158px;
+        width: 170px;
+        position: fixed;
+        bottom: 30px;
+        right: -100px;
+        z-index: 1000;
+        background-image: url(img/handtekening.svg);
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        transition: 0.6s ease-in-out;
+        opacity: 0;
+    }
+    #logo.active {
+        height: 158px;
+        width: 170px;
+        position: fixed;
+        bottom: 30px;
+        right: 40px;
+        z-index: 1000;
+        background-image: url(img/handtekening.svg);
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        opacity: 1;
+    }
+}
+@media only screen and (max-height: 750px) {
+    .navigation {
+        margin-top: -200px;
+    }
+}
+@media only screen and (max-width: 699px) {
+    #logo {
+        right:  0px!important;
+        left: 0px!important;
+        bottom: -150px;
+        width: auto!important;
+    }
+    #logo.active {
+        bottom: 30px;
+    }
 }

@@ -45,7 +45,23 @@ function openNav() {
 
 });
 
-
 function goBack() {
   window.history.back();
 }
+
+$(function () {
+
+  $("#logo-show").click(function() {
+    $(this).toggleClass("on");
+    $("#logo").toggleClass("active");
+  });
+
+});
+$(function () {
+
+  $("#logo-no-show").click(function() {
+    $(this).toggleClass("on");
+    $("#logo").toggleClass("active");
+  });
+
+});
