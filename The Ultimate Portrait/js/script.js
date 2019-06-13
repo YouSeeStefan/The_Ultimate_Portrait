@@ -1,6 +1,13 @@
+$(document).ready(function(){
 
+      $("#contact-button").click(function() {
+      $(this).toggleClass("on");
+      $("#contact-popup").toggleClass("active");
+      });
 
-    function openNav() {
+    });
+
+function openNav() {
       if (matchMedia) {
         const mq = window.matchMedia("(min-width: 700px)");
 
